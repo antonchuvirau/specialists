@@ -3572,3 +3572,38 @@ table {
     -webkit-transform: translateX(-50%) translateY(5px);
         -ms-transform: translateX(-50%) translateY(5px);
             transform: translateX(-50%) translateY(5px); }
+
+.breadcrumbs__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+
+.breadcrumbs__link {
+  font-size: 1.4rem;
+  color: #fff; }
+  .breadcrumbs__link[href] {
+    position: relative;
+    margin-right: 20px; }
+    .breadcrumbs__link[href]:hover {
+      opacity: .85; }
+    .breadcrumbs__link[href]::after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 8px;
+      top: 50%;
+      margin-top: -4px;
+      left: calc(100% + 8px);
+      background: url("../img/icons/breadcrumbs.svg") no-repeat 50%/5px auto; }

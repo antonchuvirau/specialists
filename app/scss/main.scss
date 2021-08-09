@@ -104,7 +104,8 @@ $utilities: map-get-multiple(
 // 5. Components
 @import
   'components/button',
-  'components/navigation';
+  'components/navigation',
+  'components/breadcrumbs';
 
 // 6. Page-specific styles
 @import
