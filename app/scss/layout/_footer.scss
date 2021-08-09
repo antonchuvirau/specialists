@@ -1,0 +1,10 @@
+.footer {
+    background: $primary;
+    &__top {
+        padding: 45px 0;
+        padding-top: 110px;
+    }
+    &__bottom {
+        padding: 35px 0;
+    }
+}

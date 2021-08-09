@@ -3504,6 +3504,14 @@ h1 {
 .header__options {
   text-align: right; }
 
+.footer {
+  background: #4F79FF; }
+  .footer__top {
+    padding: 45px 0;
+    padding-top: 110px; }
+  .footer__bottom {
+    padding: 35px 0; }
+
 .hero {
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px; }
@@ -3565,6 +3573,10 @@ h1 {
     max-width: 770px;
     height: 430px;
     z-index: 1; }
+
+.main__wrapper {
+  padding: 160px 0;
+  padding-top: 365px; }
 
 .btn {
   display: inline-block;
@@ -3688,3 +3700,34 @@ h1 {
     background: url("../img/icons/play-button.svg") no-repeat 50%/120px auto;
     pointer-events: none;
     z-index: 1; }
+
+.social__title {
+  display: block;
+  color: #fff;
+  line-height: 1.33;
+  font-weight: 600;
+  margin-bottom: 24px; }
+
+.social__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+
+.social__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+  .social__link:not(:last-child) {
+    margin-right: 15px; }

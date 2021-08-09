@@ -99,14 +99,16 @@ $utilities: map-get-multiple(
 @import
   'layout/header',
   'layout/footer',
-  'layout/hero';
+  'layout/hero',
+  'layout/main';
 
 // 5. Components
 @import
   'components/button',
   'components/navigation',
   'components/breadcrumbs',
-  'components/video-section';
+  'components/video-section',
+  'components/social';
 
 // 6. Page-specific styles
 @import
