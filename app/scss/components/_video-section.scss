@@ -1,0 +1,21 @@
+.video-section {
+    border-radius: $video-section-border-radius;
+    border: 24px solid $white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    box-shadow: 0 18px 48px 0 rgba($primary, .07);
+    text-decoration: none;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 120px;
+        height: 75px;
+        background: icon('play-button.svg') no-repeat 50% / 120px auto;
+        pointer-events: none;
+        z-index: 1;
+    }
+}

@@ -2,8 +2,53 @@
     border-bottom-left-radius: $hero-border-radius;
     border-bottom-right-radius: $hero-border-radius;
     &__wrapper {
+        position: relative;
         padding: 120px 0;
         padding-bottom: 300px;
         background: image('hero@2x.png') no-repeat 50% / cover;
+    }
+    &__breadcrumbs {
+        margin-bottom: 65px;
+    }
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 85px;
+        color: $white;
+        max-width: 965px;
+    }
+    &__advantages {
+        @include flex(row, center, center);
+        &-item {
+            position: relative;
+            font-size: 2.4rem;
+            color: $light;
+            line-height: 1.3;
+            padding-left: 50px;
+            font-weight: 600;
+            &:not(:last-child) {
+                margin-right: 80px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                left: 0;
+                top: 50%;
+                margin-top: -15px;
+                background: icon('advantages.svg') no-repeat 50% / 30px auto;
+            }
+        }
+    }
+    &__video {
+        position: absolute;
+        top: calc(100% - 215px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 770px;
+        height: 430px;
+        z-index: 1;
     }
 }

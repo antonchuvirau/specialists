@@ -3484,6 +3484,11 @@ table {
 /**
  * Basic typography style for copy text
  */
+h1 {
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 1.125; }
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -3503,9 +3508,63 @@ table {
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px; }
   .hero__wrapper {
+    position: relative;
     padding: 120px 0;
     padding-bottom: 300px;
     background: url("../img/hero@2x.png") no-repeat 50%/cover; }
+  .hero__breadcrumbs {
+    margin-bottom: 65px; }
+  .hero__title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 85px;
+    color: #fff;
+    max-width: 965px; }
+  .hero__advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+    .hero__advantages-item {
+      position: relative;
+      font-size: 2.4rem;
+      color: #F2F2F2;
+      line-height: 1.3;
+      padding-left: 50px;
+      font-weight: 600; }
+      .hero__advantages-item:not(:last-child) {
+        margin-right: 80px; }
+      .hero__advantages-item::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 0;
+        top: 50%;
+        margin-top: -15px;
+        background: url("../img/icons/advantages.svg") no-repeat 50%/30px auto; }
+  .hero__video {
+    position: absolute;
+    top: calc(100% - 215px);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    max-width: 770px;
+    height: 430px;
+    z-index: 1; }
 
 .btn {
   display: inline-block;
@@ -3607,3 +3666,25 @@ table {
       margin-top: -4px;
       left: calc(100% + 8px);
       background: url("../img/icons/breadcrumbs.svg") no-repeat 50%/5px auto; }
+
+.video-section {
+  border-radius: 32px;
+  border: 24px solid #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  -webkit-box-shadow: 0 18px 48px 0 rgba(79, 121, 255, 0.07);
+          box-shadow: 0 18px 48px 0 rgba(79, 121, 255, 0.07);
+  text-decoration: none; }
+  .video-section::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+    width: 120px;
+    height: 75px;
+    background: url("../img/icons/play-button.svg") no-repeat 50%/120px auto;
+    pointer-events: none;
+    z-index: 1; }
