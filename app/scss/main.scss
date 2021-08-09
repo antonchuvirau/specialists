@@ -98,7 +98,8 @@ $utilities: map-get-multiple(
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/hero';
 
 // 5. Components
 @import

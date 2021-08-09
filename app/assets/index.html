@@ -20,17 +20,36 @@
 
 <body>
     <!-- Begin header -->
-    <header class="header">
+    <header class="header header_is-sticky">
         <div class="container">
-            <div class="row">
-                <div class="col-4 offset-1"></div>
-                <div class="col-7"></div>
+            <div class="row align-items-center">
+                <div class="col-3 header__col">
+                    <a href="#" class="logo header__logo">
+                        <img class="logo__media" src="img/logo.svg" alt="alt">
+                    </a>
+                </div>
+                <div class="col-7 header__col">
+                    <nav class="navigation">
+                        <li class="navigation__item"><a href="#" class="navigation__link">Каталог</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Возможности</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Семинары</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Тарифы</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Вопросы и ответы</a></li>
+                    </nav>
+                </div>
+                <div class="col-2 header__col header__options">
+                    <a class="btn" href="#">Подписка</a>
+                </div>
             </div>
         </div>
     </header>
     <!-- End header -->
     <!-- Begin main -->
-    <main class="main"></main>
+    <main class="main">
+        <div class="hero">
+            <div class="hero__wrapper"></div>
+        </div>
+    </main>
     <!-- End main -->
     <!-- Begin footer -->
     <footer class="footer"></footer>

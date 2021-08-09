@@ -3484,3 +3484,17 @@ table {
 /**
  * Basic typography style for copy text
  */
+.header_is-sticky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; }
+
+.hero {
+  background: #4F79FF;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px; }
+  .hero__wrapper {
+    padding: 120px 0;
+    padding-bottom: 300px; }

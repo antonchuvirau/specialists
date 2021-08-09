@@ -1,0 +1,9 @@
+.hero {
+    background: $primary;
+    border-bottom-left-radius: $hero-border-radius;
+    border-bottom-right-radius: $hero-border-radius;
+    &__wrapper {
+        padding: 120px 0;
+        padding-bottom: 300px;
+    }
+}
