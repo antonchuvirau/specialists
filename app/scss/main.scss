@@ -100,7 +100,9 @@ $utilities: map-get-multiple(
   'layout/header',
   'layout/footer',
   'layout/hero',
-  'layout/main';
+  'layout/main',
+  'layout/section',
+  'layout/team-section';
 
 // 5. Components
 @import

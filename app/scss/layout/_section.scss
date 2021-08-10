@@ -1,0 +1,30 @@
+.section {
+    &__header {
+        margin-bottom: 35px;
+    }
+    &__title {
+        margin: 0;
+        font-size: 3.6rem;
+    }
+    &__content {
+        &-title {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        &-text {
+            & p {
+                margin: 0;
+                color: $gray;
+                line-height: 1.5;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &-btn {
+            margin-top: 25px;
+        }
+    }
+}

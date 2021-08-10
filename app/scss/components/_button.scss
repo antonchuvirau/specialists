@@ -21,6 +21,16 @@
         background: $white;
         color: $primary;
     }
+    &_default {
+        background: transparent;
+        border-color: $primary;
+        color: $primary;
+        &:hover {
+            background: $primary;
+            color: $white;
+            border-color: $primary;
+        }
+    }
     // &_filled {
     //     background: $white;
     //     color: $primary;
