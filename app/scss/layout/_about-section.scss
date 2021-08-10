@@ -1,0 +1,31 @@
+.about-section {
+    background: $primary image('about-pattern.svg') no-repeat 50% / cover;
+    box-shadow: 0 0 5px 0 rgba(69, 157, 239, .31);
+    padding: 100px 0;
+    &__title {
+        color: $white;
+    }
+    &__header {
+        margin-bottom: 80px;
+    }
+    &__content {
+        padding: 30px;
+        background: rgba($white, .9);
+        border-radius: 32px;
+        box-shadow: 0 0 1px 0 rgba(69, 157, 239, .5), 0 4px 20px 0 rgba(69, 157, 239, .07);
+        &-title {
+            margin: 0;
+            line-height: 1.33;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        &-value {
+            line-height: 1.33;
+            margin: 0;
+            color: $gray;
+        }
+    }
+    &__col {
+        margin-bottom: 30px;
+    }
+}
