@@ -8,6 +8,9 @@
     border: 2px solid $white;
     border-radius: $button-border-radius;
     text-align: center;
+    &__icon {
+        margin-left: 10px;
+    }
     &_size {
         &-s {
             padding: .5em 1.5em;
@@ -31,8 +34,14 @@
             border-color: $primary;
         }
     }
-    // &_filled {
-    //     background: $white;
-    //     color: $primary;
-    // }
+    &_blue {
+        background: $primary;
+        color: $white;
+        border-color: $primary;
+        &:hover {
+            background: $primary-300;
+            color: $white;
+            border-color: $primary-300;
+        }
+    }
 }

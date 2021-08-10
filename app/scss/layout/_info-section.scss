@@ -1,0 +1,29 @@
+.info-section {
+    &__media {
+        position: relative;
+    }
+    &__btn {
+        position: absolute;
+        bottom: 120px;
+        right: 0;
+        z-index: 1;
+    }
+    &__content {
+        &-item {
+            @include flex(row, center);
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &-value {
+            font-size: 6.4rem;
+            font-weight: 600;
+            margin-right: 25px;
+        }
+        &-name {
+            font-weight: 600;
+            color: $gray;
+            text-transform: uppercase;
+        }
+    }
+}

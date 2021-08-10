@@ -3603,6 +3603,9 @@ h1 {
 .main__about {
   margin-bottom: 160px; }
 
+.main__info {
+  margin-bottom: 160px; }
+
 .section__header {
   margin-bottom: 35px; }
 
@@ -3672,6 +3675,44 @@ h1 {
   .about-section__col {
     margin-bottom: 30px; }
 
+.info-section__media {
+  position: relative; }
+
+.info-section__btn {
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+  z-index: 1; }
+
+.info-section__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+  .info-section__content-item:not(:last-child) {
+    margin-bottom: 20px; }
+
+.info-section__content-value {
+  font-size: 6.4rem;
+  font-weight: 600;
+  margin-right: 25px; }
+
+.info-section__content-name {
+  font-weight: 600;
+  color: #828282;
+  text-transform: uppercase; }
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -3682,6 +3723,8 @@ h1 {
   border: 2px solid #fff;
   border-radius: 12px;
   text-align: center; }
+  .btn__icon {
+    margin-left: 10px; }
   .btn_size-s {
     padding: .5em 1.5em; }
   .btn_size-auto {
@@ -3698,6 +3741,14 @@ h1 {
       background: #4F79FF;
       color: #fff;
       border-color: #4F79FF; }
+  .btn_blue {
+    background: #4F79FF;
+    color: #fff;
+    border-color: #4F79FF; }
+    .btn_blue:hover {
+      background: #3666FF;
+      color: #fff;
+      border-color: #3666FF; }
 
 .navigation__wrapper {
   display: -webkit-box;
