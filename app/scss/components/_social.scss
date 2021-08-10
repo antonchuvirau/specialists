@@ -16,5 +16,17 @@
         &:not(:last-child) {
             margin-right: 15px;
         }
+        &[data-social-icon="facebook"] {
+            background: icon('facebook.svg') no-repeat 50% / 40px auto;
+        }
+        &[data-social-icon="youtube"] {
+            background: icon('youtube.svg') no-repeat 50% / 40px auto;
+        }
+        &[data-social-icon="instagram"] {
+            background: icon('instagram.svg') no-repeat 50% / 40px auto;
+        }
+        &:hover {
+            opacity: .85;
+        }
     }
 }
