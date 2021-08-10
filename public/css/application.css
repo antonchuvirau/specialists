@@ -3606,6 +3606,9 @@ h1 {
 .main__info {
   margin-bottom: 160px; }
 
+.main__rate {
+  margin-bottom: 160px; }
+
 .section__header {
   margin-bottom: 35px; }
 
@@ -3713,13 +3716,22 @@ h1 {
   color: #828282;
   text-transform: uppercase; }
 
+.rate-section__header {
+  margin-bottom: 80px; }
+
+.rate-section__message:not(:last-child) {
+  margin-bottom: 40px; }
+
+.rate-section__grid {
+  margin-bottom: 40px; }
+
 .btn {
   display: inline-block;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
   line-height: 1.5;
-  padding: .75em 2.2em;
+  padding: .5em 2em;
   border: 2px solid #fff;
   border-radius: 12px;
   text-align: center; }
@@ -3749,6 +3761,14 @@ h1 {
       background: #3666FF;
       color: #fff;
       border-color: #3666FF; }
+  .btn_green {
+    background: #68D94C;
+    color: #fff;
+    border-color: #68D94C; }
+    .btn_green:hover {
+      background: #49C62A;
+      color: #fff;
+      border-color: #49C62A; }
 
 .navigation__wrapper {
   display: -webkit-box;
@@ -3963,3 +3983,174 @@ h1 {
     margin: 0;
     line-height: 1.33;
     color: #828282; }
+
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  padding: 30px 70px;
+  background: #fff;
+  border-radius: 32px;
+  -webkit-box-shadow: 0 0 1px 0 rgba(69, 157, 239, 0.5), 0 4px 20px 0 rgba(69, 157, 239, 0.07);
+          box-shadow: 0 0 1px 0 rgba(69, 157, 239, 0.5), 0 4px 20px 0 rgba(69, 157, 239, 0.07); }
+  .message_highlighted {
+    border: 4px solid #4F79FF; }
+  .message__col {
+    width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+    .message__col:first-child {
+      padding-right: 50px; }
+    .message__col:last-child {
+      padding-left: 50px; }
+    .message__col:not(:last-child) {
+      border-right: 1px solid rgba(79, 121, 255, 0.1); }
+  .message__title {
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1.33;
+    color: #4F79FF;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  .message__text p {
+    margin: 0;
+    line-height: 1.5;
+    color: #828282; }
+  .message__btn {
+    width: 100%;
+    max-width: 230px;
+    margin-top: 20px; }
+  .message__list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .message__list ul li {
+      position: relative;
+      padding-left: 30px;
+      color: #828282;
+      line-height: 1.33; }
+      .message__list ul li:not(:last-child) {
+        margin-bottom: 15px; }
+      .message__list ul li::before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: url("../img/icons/list.svg") no-repeat 50%/16px auto;
+        top: 3px;
+        left: 0; }
+
+.rate-item {
+  background: #fff;
+  border-radius: 32px;
+  -webkit-box-shadow: 0 0 1px 0 rgba(69, 157, 239, 0.5), 0 4px 20px 0 rgba(69, 157, 239, 0.07);
+          box-shadow: 0 0 1px 0 rgba(69, 157, 239, 0.5), 0 4px 20px 0 rgba(69, 157, 239, 0.07); }
+  .rate-item__wrapper {
+    padding: 30px 20px; }
+  .rate-item__title {
+    margin: 0;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #4F79FF;
+    line-height: 1.33;
+    font-weight: 600;
+    margin-bottom: 20px; }
+  .rate-item__desc ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .rate-item__desc ul li {
+      position: relative;
+      padding-left: 30px;
+      color: #828282;
+      line-height: 1.33; }
+      .rate-item__desc ul li:not(:last-child) {
+        margin-bottom: 15px; }
+      .rate-item__desc ul li::before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: url("../img/icons/list.svg") no-repeat 50%/16px auto;
+        top: 3px;
+        left: 0; }
+  .rate-item__options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    margin-top: 25px; }
+  .rate-item__price {
+    position: relative;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.33; }
+    .rate-item__price-sale {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+      font-size: .8rem;
+      color: #fff;
+      font-weight: 600;
+      width: 35px;
+      height: 15px;
+      border-radius: 22px;
+      background: #68D94C;
+      bottom: 100%;
+      right: 0;
+      z-index: 1; }
+  .rate-item__btn {
+    margin-left: auto; }
+  .rate-item:hover {
+    background: #4F79FF;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .rate-item:hover .rate-item__title {
+      color: #fff; }
+    .rate-item:hover .rate-item__desc ul li, .rate-item:hover .rate-item__desc ol li {
+      color: #F2F2F2; }
+      .rate-item:hover .rate-item__desc ul li::before, .rate-item:hover .rate-item__desc ol li::before {
+        background: url("../img/icons/list-light.svg") no-repeat 50%/16px auto; }
+    .rate-item:hover .rate-item__price {
+      color: #fff; }
+    .rate-item:hover .rate-item__btn {
+      background: #fff;
+      border-color: #fff;
+      color: #4F79FF; }

@@ -1,0 +1,13 @@
+.rate-section {
+    &__header {
+        margin-bottom: 80px;
+    }
+    &__message {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+    &__grid {
+        margin-bottom: 40px;
+    }
+}

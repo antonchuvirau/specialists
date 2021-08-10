@@ -4,7 +4,7 @@
     color: $white;
     font-weight: 600;
     line-height: 1.5;
-    padding: .75em 2.2em;
+    padding: .5em 2em;
     border: 2px solid $white;
     border-radius: $button-border-radius;
     text-align: center;
@@ -42,6 +42,16 @@
             background: $primary-300;
             color: $white;
             border-color: $primary-300;
+        }
+    }
+    &_green {
+        background: $secondary;
+        color: $white;
+        border-color: $secondary;
+        &:hover {
+            background: $secondary-300;
+            color: $white;
+            border-color: $secondary-300;
         }
     }
 }

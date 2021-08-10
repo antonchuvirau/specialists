@@ -105,7 +105,8 @@ $utilities: map-get-multiple(
   'layout/team-section',
   'layout/advantages-section',
   'layout/about-section',
-  'layout/info-section';
+  'layout/info-section',
+  'layout/rate-section';
 
 // 5. Components
 @import
@@ -115,7 +116,9 @@ $utilities: map-get-multiple(
   'components/video-section',
   'components/social',
   'components/app',
-  'components/advantages-item';
+  'components/advantages-item',
+  'components/message',
+  'components/rate-item';
 
 // 6. Page-specific styles
 @import

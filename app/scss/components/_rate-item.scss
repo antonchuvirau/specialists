@@ -1,0 +1,96 @@
+.rate-item {
+    background: $white;
+    border-radius: 32px;
+    box-shadow: 0 0 1px 0 rgba(69, 157, 239, .5), 0 4px 20px 0 rgba(69, 157, 239, .07);
+    &__wrapper {
+        padding: 30px 20px;
+    }
+    &__title {
+        margin: 0;
+        text-align: center;
+        font-size: 2.4rem;
+        color: $primary;
+        line-height: 1.33;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        & ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            & li {
+                position: relative;
+                padding-left: 30px;
+                color: $gray;
+                line-height: 1.33;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    background: icon('list.svg') no-repeat 50% / 16px auto;
+                    top: 3px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &__options {
+        @include flex(row, flex-end);
+        margin-top: 25px;
+    }
+    &__price {
+        position: relative;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.33;
+        &-sale {
+            position: absolute;
+            @include flex(row, center, center);
+            font-size: .8rem;
+            color: $white;
+            font-weight: 600;
+            width: 35px;
+            height: 15px;
+            border-radius: 22px;
+            background: $secondary;
+            bottom: 100%;
+            right: 0;
+            z-index: 1;
+        }
+    }
+    &__btn {
+        margin-left: auto;
+    }
+    &:hover {
+        background: $primary;
+        box-shadow: none;
+        & .rate-item {
+            &__title {
+                color: $white;
+            }
+            &__desc {
+                & ul, ol {
+                    & li {
+                        color: $light;
+                        &::before {
+                            background: icon('list-light.svg') no-repeat 50% / 16px auto;
+                        }
+                    }
+                }
+            }
+            &__price {
+                color: $white;
+            }
+            &__btn {
+                background: $white;
+                border-color: $white;
+                color: $primary;
+            }
+        }
+    }
+}
