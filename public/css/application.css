@@ -3510,7 +3510,26 @@ h1 {
     padding: 45px 0;
     padding-top: 110px; }
   .footer__bottom {
-    padding: 35px 0; }
+    padding: 35px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); }
+  .footer__text {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    line-height: 1.125; }
+    .footer__text:not(:last-child) {
+      margin-right: 20px; }
+  .footer__link {
+    text-decoration: none;
+    line-height: 1.125;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+    display: inline; }
+    .footer__link:hover {
+      opacity: .85; }
+  .footer__btn {
+    width: 100%; }
 
 .hero {
   border-bottom-left-radius: 80px;
@@ -3586,7 +3605,12 @@ h1 {
   line-height: 1.5;
   padding: .75em 2.2em;
   border: 2px solid #fff;
-  border-radius: 12px; }
+  border-radius: 12px;
+  text-align: center; }
+  .btn_size-s {
+    padding: .5em 1.5em; }
+  .btn_size-auto {
+    padding: .5em 0; }
   .btn:hover {
     border-color: #F2F2F2;
     background: #fff;

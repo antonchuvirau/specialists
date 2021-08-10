@@ -7,6 +7,15 @@
     padding: .75em 2.2em;
     border: 2px solid $white;
     border-radius: $button-border-radius;
+    text-align: center;
+    &_size {
+        &-s {
+            padding: .5em 1.5em;
+        }
+        &-auto {
+            padding: .5em 0;
+        }
+    }
     &:hover {
         border-color: $light;
         background: $white;
