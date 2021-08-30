@@ -27,26 +27,37 @@
             transition: transform .25s ease;
             opacity: 0;
         }
-        &:hover {
-            &::after {
-                opacity: 1;
-                transform: translateX(-50%) translateY(5px);
+        &:not(.navigation__link_is-active, .navigation__link_is-styled) {
+            &:hover {
+                &::after {
+                    opacity: 1;
+                    transform: translateX(-50%) translateY(5px);
+                }
             }
+        }
+        &:hover {
+            opacity: .85;
         }
         &-icon {
             flex-shrink: 0;
             margin-left: 5px;
         }
-        &_is-styled {
-            &::after {
-                opacity: 1;
-                width: calc(100% - 24px);
-                transform: none;
-                left: 0;
+        &_is {
+            &-active {
+                color: $primary;
+                pointer-events: none;
             }
-            &:hover {
+            &-styled {
                 &::after {
+                    opacity: 1;
+                    width: calc(100% - 24px);
                     transform: none;
+                    left: 0;
+                }
+                &:hover {
+                    &::after {
+                        transform: none;
+                    }
                 }
             }
         }

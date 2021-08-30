@@ -106,7 +106,8 @@ $utilities: map-get-multiple(
   'layout/advantages-section',
   'layout/about-section',
   'layout/info-section',
-  'layout/rate-section';
+  'layout/rate-section',
+  'layout/template';
 
 // 5. Components
 @import
@@ -118,7 +119,8 @@ $utilities: map-get-multiple(
   'components/app',
   'components/advantages-item',
   'components/message',
-  'components/rate-item';
+  'components/rate-item',
+  'components/account-link';
 
 // 6. Page-specific styles
 @import

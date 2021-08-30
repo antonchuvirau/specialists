@@ -7,11 +7,29 @@
             width: 100%;
             z-index: 10;
         }
+        &-dark {
+            & .navigation {
+                &__link {
+                    color: $gray-100;
+                    &::after {
+                        background-color: $gray-100;
+                    }
+                    &_is {
+                        &-active {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
     }
     &__wrapper {
         @include flex(row, center);
     }
     &__btn {
+        margin-left: auto;
+    }
+    &__account-link {
         margin-left: auto;
     }
 }
