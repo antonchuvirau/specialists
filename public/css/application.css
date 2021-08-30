@@ -39,9 +39,9 @@ html {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1230px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1170px; } }
+    max-width: 1200px; } }
 
 .row {
   --bs-gutter-x: 30px;
@@ -769,7 +769,7 @@ html {
   .gy-lg-5 {
     --bs-gutter-y: 3rem; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1230px) {
   .col-xl {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0%;
@@ -2645,7 +2645,7 @@ html {
   .ps-lg-5 {
     padding-left: 3rem !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1230px) {
   .d-xl-inline {
     display: inline !important; }
   .d-xl-inline-block {
@@ -3501,8 +3501,25 @@ h1 {
   width: 100%;
   z-index: 10; }
 
-.header__options {
-  text-align: right; }
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+
+.header__btn {
+  margin-left: auto; }
 
 .footer {
   background: #4F79FF; }
@@ -3792,7 +3809,7 @@ h1 {
             justify-content: center; }
 
 .navigation__item:not(:last-child) {
-  margin-right: 50px; }
+  margin-right: 30px; }
 
 .navigation__link {
   position: relative;
@@ -3821,6 +3838,21 @@ h1 {
     -webkit-transform: translateX(-50%) translateY(5px);
         -ms-transform: translateX(-50%) translateY(5px);
             transform: translateX(-50%) translateY(5px); }
+  .navigation__link-icon {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-left: 5px; }
+  .navigation__link_is-styled::after {
+    opacity: 1;
+    width: calc(100% - 24px);
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    left: 0; }
+  .navigation__link_is-styled:hover::after {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
 
 .breadcrumbs__wrapper {
   display: -webkit-box;
