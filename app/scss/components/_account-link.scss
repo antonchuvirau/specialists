@@ -4,7 +4,16 @@
         position: absolute;
         top: 100%;
         right: 0;
+        opacity: 0;
+        transform: translateY(8px);
+        transition: opacity .2s ease, transform .25s ease;
+        pointer-events: none;
         z-index: 1;
+        &_is-opened {
+            opacity: 1;
+            transform: none;
+            pointer-events: auto;
+        }
     }
     &__name {
         display: inline-block;
@@ -60,7 +69,7 @@ $account-notifications-br: 8px;
         width: $account-notifications-width;
         background: $white;
         border-radius: $account-notifications-br;
-        padding: 30px 20px;
+        padding: 15px 20px;
         box-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
     }
     &__item {

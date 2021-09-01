@@ -3753,7 +3753,11 @@ h1 {
   margin-bottom: 40px; }
 
 .template__wrapper {
-  padding-top: 120px; }
+  padding: 120px 0;
+  padding-bottom: 160px; }
+
+.catalog-template {
+  background: url("../img/catalog-bg.svg") no-repeat 50%/100% auto; }
 
 .btn {
   display: inline-block;
@@ -3906,6 +3910,10 @@ h1 {
       margin-top: -4px;
       left: calc(100% + 8px);
       background: url("../img/icons/breadcrumbs.svg") no-repeat 50%/5px auto; }
+  .breadcrumbs__link_is-dark {
+    color: #bdbdbd; }
+    .breadcrumbs__link_is-dark[href]::after {
+      background: url("../img/icons/breadcrumbs-dark.svg") no-repeat 50%/5px auto; }
 
 .video-section {
   border-radius: 32px;
@@ -4211,7 +4219,23 @@ h1 {
     position: absolute;
     top: 100%;
     right: 0;
+    opacity: 0;
+    -webkit-transform: translateY(8px);
+        -ms-transform: translateY(8px);
+            transform: translateY(8px);
+    -webkit-transition: opacity .2s ease, -webkit-transform .25s ease;
+    transition: opacity .2s ease, -webkit-transform .25s ease;
+    -o-transition: opacity .2s ease, transform .25s ease;
+    transition: opacity .2s ease, transform .25s ease;
+    transition: opacity .2s ease, transform .25s ease, -webkit-transform .25s ease;
+    pointer-events: none;
     z-index: 1; }
+    .account-link__notifications_is-opened {
+      opacity: 1;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      pointer-events: auto; }
   .account-link__name {
     display: inline-block;
     vertical-align: middle;
@@ -4258,7 +4282,7 @@ h1 {
     width: 270px;
     background: #fff;
     border-radius: 8px;
-    padding: 30px 20px;
+    padding: 15px 20px;
     -webkit-box-shadow: 0 0 1px 0 rgba(79, 121, 255, 0.5), 0 4px 20px 0 rgba(79, 121, 255, 0.07);
             box-shadow: 0 0 1px 0 rgba(79, 121, 255, 0.5), 0 4px 20px 0 rgba(79, 121, 255, 0.07); }
   .account-notifications__item {

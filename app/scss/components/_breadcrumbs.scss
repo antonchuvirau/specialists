@@ -22,5 +22,15 @@
                 background: icon('breadcrumbs.svg') no-repeat 50% / 5px auto;
             }
         }
+        &_is {
+            &-dark {
+                color: $gray-50;
+                &[href] {
+                    &::after {
+                        background: icon('breadcrumbs-dark.svg') no-repeat 50% / 5px auto;
+                    }
+                }
+            }
+        }
     }
 }
