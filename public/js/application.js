@@ -37,3 +37,11 @@ document.addEventListener(`DOMContentLoaded`, () => {
 });
 
 document.addEventListener(`click`, onDocumentClickHandler);
+
+// JQUERY
+jQuery(document).ready(function() {
+    jQuery('[data-modal]').on('click', function() {
+        jQuery(jQuery(this).data('modal')).modal();
+        return false;
+    });
+});

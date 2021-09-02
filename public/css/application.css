@@ -4864,7 +4864,8 @@ h1 {
     font-weight: 600;
     margin-bottom: 15px; }
   .exercise-grid__item {
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    cursor: pointer; }
     .exercise-grid__item-text {
       margin-top: 20px; }
       .exercise-grid__item-text p {
@@ -4954,3 +4955,33 @@ h1 {
     .exercise-grid__share-button:hover {
       color: #828282;
       border-color: #bdbdbd; }
+
+.modal {
+  border: 16px solid #fff;
+  -webkit-box-shadow: 0 20px 55px 0 rgba(69, 157, 239, 0.07);
+          box-shadow: 0 20px 55px 0 rgba(69, 157, 239, 0.07);
+  padding: 0;
+  border-radius: 40px; }
+  .modal a.close-modal {
+    background: url("../img/icons/close.svg") no-repeat 50%/20px auto;
+    right: -20px;
+    top: auto;
+    bottom: calc(100% + 50px);
+    -webkit-transition: -webkit-transform .25s ease;
+    transition: -webkit-transform .25s ease;
+    -o-transition: transform .25s ease;
+    transition: transform .25s ease;
+    transition: transform .25s ease, -webkit-transform .25s ease; }
+    .modal a.close-modal:hover {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  .modal iframe {
+    border-radius: 40px; }
+
+.blocker {
+  background: rgba(34, 34, 34, 0.5);
+  z-index: 9999; }
+
+.video-modal {
+  max-width: 925px; }

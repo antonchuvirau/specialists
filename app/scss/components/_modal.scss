@@ -1,0 +1,26 @@
+.modal {
+    border: 16px solid $white;
+    box-shadow: 0 20px 55px 0 rgba(69, 157, 239, .07);
+    padding: 0;
+    border-radius: 40px;
+    & a.close-modal {
+        background: icon('close.svg') no-repeat 50% / 20px auto;
+        right: -20px;
+        top: auto;
+        bottom: calc(100% + 50px);
+        transition: transform .25s ease;
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+    & iframe {
+        border-radius: 40px;
+    }
+}
+.blocker {
+    background: rgba($black, .5);
+    z-index: 9999;
+}
+.video-modal {
+    max-width: 925px;
+}
