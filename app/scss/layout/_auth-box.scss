@@ -1,0 +1,48 @@
+.auth-box {
+    &__header {
+        margin-bottom: 15px;
+    }
+    &__title {
+        margin: 0;
+        text-align: center;
+        font-size: 2.4rem;
+        line-height: 1.35;
+        font-weight: 600;
+    }
+    &__form {
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+    &__footer {
+        padding-top: 30px;
+        margin-top: 30px;
+        border-top: 1px solid rgba($primary, .1);
+    }
+    &__text {
+        & ul {
+            margin: 0;
+            padding: 0;
+            & li {
+                font-size: 1.4rem;
+                color: $gray;
+                line-height: 1.45;
+            }
+        }
+    }
+    &__help {
+        text-align: center;
+        margin-top: 50px;
+        &-text {
+            font-weight: 600;
+            color: $gray-100;
+        }
+        &-link {
+            color: $primary;
+            margin-left: 10px;
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+}

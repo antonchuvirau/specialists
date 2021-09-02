@@ -1,7 +1,7 @@
 .form {
     &__footer {
         @include flex(row, center, center);
-        margin-top: 50px;
+        margin-top: 40px;
     }
     &__row {
         @include flex(row, center);
@@ -30,6 +30,7 @@
     }
     &__container {
         @include flex(column);
+        width: 100%;
         max-width: 270px;
         flex: 1 1 270px;
         &:not(:last-child) {
