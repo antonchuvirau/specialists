@@ -1,8 +1,10 @@
 .modal {
-    border: 16px solid $white;
     box-shadow: 0 20px 55px 0 rgba($primary, .07);
     padding: 0;
     border-radius: 40px;
+    padding: 70px 100px;
+    padding-bottom: 90px;
+    max-width: 570px;
     & a.close-modal {
         background: icon('close.svg') no-repeat 50% / 20px auto;
         right: -20px;
@@ -40,6 +42,7 @@
 }
 .video-modal {
     max-width: 925px;
+    border: 16px solid $white;
 }
 .sharing-modal {
     max-width: 770px;
@@ -73,5 +76,23 @@
                 background: map-get($levels, #{$level});
             }
         }
+    }
+}
+.success-modal {
+    &__grid {
+        @include flex(column, center, flex-start);
+    }
+    &__icon {
+        max-width: 110px;
+        margin-bottom: 35px;
+    }
+    &__title {
+        margin: 0;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    &__btn {
+        margin-top: 35px;
     }
 }

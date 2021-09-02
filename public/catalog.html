@@ -465,10 +465,17 @@
                         </div>
                     </div>
                     <footer class="form__footer">
-                        <button type="submit" class="btn btn_size-s btn_default form__btn">Отправить</button>
+                        <button type="button" data-modal="#success-modal" class="btn btn_size-s btn_default form__btn">Отправить</button>
                     </footer>
                 </form>
             </div>
+        </div>
+    </div>
+    <div id="success-modal" class="modal success-modal">
+        <div class="modal__grid success-modal__grid">
+            <img class="success-modal__icon" src="img/modal-success.svg" alt="alt">
+            <span class="success-modal__title">Ссылка для просмотра успешно отправлена</span>
+            <a href="#close" rel="modal:close" class="btn btn_size-s btn_default success-modal__btn">Закрыть</a>
         </div>
     </div>
     <!-- End modal -->
