@@ -87,10 +87,270 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="breadcrumbs">
+                        <div class="breadcrumbs template__breadcrumbs">
                             <div class="breadcrumbs__wrapper">
                                 <a href="#" class="breadcrumbs__link breadcrumbs__link_is-dark">Клиника динамика</a>
                                 <a class="breadcrumbs__link breadcrumbs__link_is-dark breadcrumbs__text">Хлебные крошки</a>
+                            </div>
+                        </div>
+                        <header class="template__options">
+                            <div class="template__options-list">
+                                <div class="b-select template__options-select">
+                                    <div class="b-select__header">
+                                        <button type="button" class="b-select__header-button"><span class="b-select__header-button-value">Каталог диагнозов</span></button>
+                                    </div>
+                                    <div class="b-select__wrapper">
+                                        <div class="b-select__container">
+                                            <ul class="list b-select__list">
+                                                <li class="b-select__list-item">
+                                                    <button type="button" class="b-select__list-button">Область</button>
+                                                    <ul class="list b-select__sub-list">
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button b-select__sub-list-button_active">Область</button>
+                                                        </li>
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button">Рука</button>
+                                                        </li>
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button">Нога</button>
+                                                        </li>
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button">Спина</button>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="b-select__list-item">
+                                                    <button type="button" class="b-select__list-button">Регион</button>
+                                                    <ul class="list b-select__sub-list">
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button b-select__sub-list-button_active">Регион</button>
+                                                        </li>
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button">Акромально-ключичное сочленение</button>
+                                                        </li>
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button">Плечевой сустав/плечевая кость</button>
+                                                        </li>
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button">Локоть</button>
+                                                        </li>
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button">Лучезастный сустав/кисть/пальцы</button>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="b-select__list-item">
+                                                    <button type="button" class="b-select__list-button">Диагноз</button>
+                                                    <ul class="list b-select__sub-list">
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button b-select__sub-list-button_active">Диагноз</button>
+                                                        </li>
+                                                        <li class="b-select__sub-list-item">
+                                                            <button type="button" class="b-select__sub-list-button">SLAP-синдром</button>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="btn btn_size-s btn_default btn_disabled b-select__show-link">Показать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-select template__options-select">
+                                    <div class="b-select__header">
+                                        <button type="button" class="b-select__header-button"><span class="b-select__header-button-value">Тендопатия/тендинит ротарной манжеты</span></button>
+                                    </div>
+                                    <div class="b-select__wrapper">
+                                        <div class="b-select__container">
+                                            <ul class="list b-select__simple-list">
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button b-select__simple-list-button_active">Частые диагнозы</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Импижмент синдром</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Тендопатия/тендинит ротарной манжеты</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Артроз плечевого сустава</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Адгезивный капсулит/ Синдром замороженное плеча</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Состояние после перелома плеча</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Дискинезия лопатки</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Повреждение ротарной манжеты(острый период)</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Тендинопатия/тендинит длинной головки бицепса плеча</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">SLAP-синдром</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Состояние после вывиха плеча</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Привычный вывих плеча/нестабильность плечевого сустава</button>
+                                                </li>
+                                                <li class="b-select__simple-list-item">
+                                                    <button type="button" class="b-select__simple-list-button">Состояние после артроскопической операция плеча</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="template__options-search">
+                                <form class="catalog-search template__options-form">
+                                    <input class="catalog-search__input" value="Регион" type="text" name="search" placeholder="Поиск">
+                                    <button type="submit" class="catalog-search__btn"></button>
+                                    <div class="catalog-search__results catalog-search__results_open">
+                                        <ul class="list catalog-search__results-list">
+                                            <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Артроз плечевого сустава</a></li>
+                                            <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Привычный вывих плеча/нестабильность плечевого сустава</a></li>
+                                            <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Адгезивный капсулит/ Синдром замороженное плеча</a></li>
+                                            <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Состояние после перелома плеча</a></li>
+                                            <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Тендинопатия/тендинит длинной головки бицепса плеча</a></li>
+                                            <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Состояние после вывиха плеча</a></li>
+                                            <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Состояние после артроскопической операция плеча</a></li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </header>
+                        <div class="template__grid">
+                            <section class="text-section template__grid-text">
+                                <div class="text-section__wrapper">
+                                    <span class="text-section__note">инструкция</span>
+                                    <div class="text-section__content text-section__wrapper-item">
+                                        <h2 class="text-section__content-title">Как работать в нашем сервисе</h2>
+                                        <div class="text-section__content-text">
+                                            <p>This is the Google for doctors! Most medical schools give students access to UptoDate (I believe the subscription for it is really pricey!). So, check with your school before you purchase it! It’s the perfect tool to read up on your patients’ conditions. I like to use it to review the diagnosis criteria, pathophysiology, treatment, and management for diseases. I highly highly recommend this app!</p>
+                                            <p>So, check with your school before you purchase it! It’s the perfect tool to read up on your patients’ conditions.</p>
+                                        </div>
+                                    </div> 
+                                    <div class="text-section__media text-section__wrapper-item">
+                                        <div style="background-image: url('img/video-block@2x.png');" class="text-section__media-video"></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="exercises-list template__grid-exercises">
+                                <div class="row">
+                                    <div class="col-4 exercises-list__col">
+                                        <div class="exercise-grid exercise-grid_start exercises-list__wrapper">
+                                            <header class="exercise-grid__header">
+                                                <span class="exercise-grid__label exercise-grid__label_start">Легкий уровень</span>
+                                                <button type="button" class="share-icon exercise-grid__share-icon">
+                                                    <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip01)" fill="#BDBDBD"><path d="M20.38 3.667a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 7.333a3.67 3.67 0 01-3.667-3.666A3.67 3.67 0 0117.401 0a3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 7.333zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291A2.294 2.294 0 0017.4 1.375zM20.38 18.334a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 22a3.67 3.67 0 01-3.667-3.666 3.67 3.67 0 013.667-3.667 3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 22zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291 2.294 2.294 0 00-2.292-2.292zM7.548 11a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M4.569 14.666A3.67 3.67 0 01.902 11 3.67 3.67 0 014.57 7.333 3.67 3.67 0 018.236 11a3.67 3.67 0 01-3.667 3.666zm0-5.958A2.294 2.294 0 002.277 11 2.294 2.294 0 004.57 13.29 2.294 2.294 0 006.86 11a2.294 2.294 0 00-2.292-2.292z"/><path d="M6.734 10.56a.915.915 0 01-.455-1.714l8.506-4.849a.915.915 0 011.25.343c.25.439.097 1-.342 1.25l-8.506 4.85a.911.911 0 01-.453.12zM15.238 18.123a.911.911 0 01-.453-.12l-8.506-4.85a.918.918 0 01.908-1.593l8.506 4.85a.918.918 0 01-.455 1.713z"/></g><defs><clipPath id="clip01"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+                                                </button>
+                                            </header>
+                                            <p class="exercise-grid__title">Комплекс упражнений №1</p>
+                                            <div class="exercise-grid__list">
+                                                <div class="exercise-grid__item">
+                                                    <div class="exercise-grid__item-media exercise-grid__item-media_video" style="background-image: url('img/exercise@2x.png');"></div>
+                                                    <div class="exercise-grid__item-text">
+                                                        <p>I like to use it to review the diagnosis criteria, pathophysio, treatment, and management for diseases. I highly highly recommend this app! and management for diseases.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="exercise-grid__item">
+                                                    <div class="exercise-grid__item-media exercise-grid__item-media_video" style="background-image: url('img/exercise@2x.png');"></div>
+                                                    <div class="exercise-grid__item-text">
+                                                        <p>I like to use it to review the diagnosis criteria, pathophysio, treatment, and management for diseases. I highly highly recommend this app! and management for diseases.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="exercise-grid__footer">
+                                                <button type="button" class="btn share-button exercise-grid__share-button">
+                                                    Поделиться
+                                                    <svg class="btn__icon" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip02)" fill="#828282"><path d="M20.38 3.667a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 7.333a3.67 3.67 0 01-3.667-3.666A3.67 3.67 0 0117.401 0a3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 7.333zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291A2.294 2.294 0 0017.4 1.375zM20.38 18.334a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 22a3.67 3.67 0 01-3.667-3.666 3.67 3.67 0 013.667-3.667 3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 22zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291 2.294 2.294 0 00-2.292-2.292zM7.548 11a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M4.569 14.666A3.67 3.67 0 01.902 11 3.67 3.67 0 014.57 7.333 3.67 3.67 0 018.236 11a3.67 3.67 0 01-3.667 3.666zm0-5.958A2.294 2.294 0 002.277 11 2.294 2.294 0 004.57 13.29 2.294 2.294 0 006.86 11a2.294 2.294 0 00-2.292-2.292z"/><path d="M6.734 10.56a.915.915 0 01-.455-1.714l8.506-4.849a.915.915 0 011.25.343c.25.439.097 1-.342 1.25l-8.506 4.85a.911.911 0 01-.453.12zM15.238 18.123a.911.911 0 01-.453-.12l-8.506-4.85a.918.918 0 01.908-1.593l8.506 4.85a.918.918 0 01-.455 1.713z"/></g><defs><clipPath id="clip02"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+                                                </button>
+                                                <a href="#" class="exercise-grid__link">Подробнее</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 exercises-list__col">
+                                        <div class="exercise-grid exercise-grid_middle exercises-list__wrapper">
+                                            <header class="exercise-grid__header">
+                                                <span class="exercise-grid__label exercise-grid__label_middle">Средний уровень</span>
+                                                <button type="button" class="share-icon exercise-grid__share-icon">
+                                                    <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip01)" fill="#BDBDBD"><path d="M20.38 3.667a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 7.333a3.67 3.67 0 01-3.667-3.666A3.67 3.67 0 0117.401 0a3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 7.333zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291A2.294 2.294 0 0017.4 1.375zM20.38 18.334a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 22a3.67 3.67 0 01-3.667-3.666 3.67 3.67 0 013.667-3.667 3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 22zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291 2.294 2.294 0 00-2.292-2.292zM7.548 11a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M4.569 14.666A3.67 3.67 0 01.902 11 3.67 3.67 0 014.57 7.333 3.67 3.67 0 018.236 11a3.67 3.67 0 01-3.667 3.666zm0-5.958A2.294 2.294 0 002.277 11 2.294 2.294 0 004.57 13.29 2.294 2.294 0 006.86 11a2.294 2.294 0 00-2.292-2.292z"/><path d="M6.734 10.56a.915.915 0 01-.455-1.714l8.506-4.849a.915.915 0 011.25.343c.25.439.097 1-.342 1.25l-8.506 4.85a.911.911 0 01-.453.12zM15.238 18.123a.911.911 0 01-.453-.12l-8.506-4.85a.918.918 0 01.908-1.593l8.506 4.85a.918.918 0 01-.455 1.713z"/></g><defs><clipPath id="clip01"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+                                                </button>
+                                            </header>
+                                            <p class="exercise-grid__title">Комплекс упражнений №2</p>
+                                            <div class="exercise-grid__list">
+                                                <div class="exercise-grid__item">
+                                                    <div class="exercise-grid__item-media exercise-grid__item-media_video" style="background-image: url('img/exercise@2x.png');"></div>
+                                                    <div class="exercise-grid__item-text">
+                                                        <p>I like to use it to review the diagnosis criteria, pathophysio, treatment, and management for diseases. I highly highly recommend this app! and management for diseases.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="exercise-grid__item">
+                                                    <div class="exercise-grid__item-media exercise-grid__item-media_video" style="background-image: url('img/exercise@2x.png');"></div>
+                                                    <div class="exercise-grid__item-text">
+                                                        <p>I like to use it to review the diagnosis criteria, pathophysio, treatment, and management for diseases. I highly highly recommend this app! and management for diseases.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="exercise-grid__item">
+                                                    <div class="exercise-grid__item-media exercise-grid__item-media_video" style="background-image: url('img/exercise@2x.png');"></div>
+                                                    <div class="exercise-grid__item-text">
+                                                        <p>I like to use it to review the diagnosis criteria, pathophysio, treatment, and management for diseases. I highly highly recommend this app! and management for diseases.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="exercise-grid__footer">
+                                                <button type="button" class="btn share-button exercise-grid__share-button">
+                                                    Поделиться
+                                                    <svg class="btn__icon" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip02)" fill="#828282"><path d="M20.38 3.667a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 7.333a3.67 3.67 0 01-3.667-3.666A3.67 3.67 0 0117.401 0a3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 7.333zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291A2.294 2.294 0 0017.4 1.375zM20.38 18.334a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 22a3.67 3.67 0 01-3.667-3.666 3.67 3.67 0 013.667-3.667 3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 22zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291 2.294 2.294 0 00-2.292-2.292zM7.548 11a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M4.569 14.666A3.67 3.67 0 01.902 11 3.67 3.67 0 014.57 7.333 3.67 3.67 0 018.236 11a3.67 3.67 0 01-3.667 3.666zm0-5.958A2.294 2.294 0 002.277 11 2.294 2.294 0 004.57 13.29 2.294 2.294 0 006.86 11a2.294 2.294 0 00-2.292-2.292z"/><path d="M6.734 10.56a.915.915 0 01-.455-1.714l8.506-4.849a.915.915 0 011.25.343c.25.439.097 1-.342 1.25l-8.506 4.85a.911.911 0 01-.453.12zM15.238 18.123a.911.911 0 01-.453-.12l-8.506-4.85a.918.918 0 01.908-1.593l8.506 4.85a.918.918 0 01-.455 1.713z"/></g><defs><clipPath id="clip02"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+                                                </button>
+                                                <a href="#" class="exercise-grid__link">Подробнее</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 exercises-list__col">
+                                        <div class="exercise-grid exercise-grid_hight exercises-list__wrapper">
+                                            <header class="exercise-grid__header">
+                                                <span class="exercise-grid__label exercise-grid__label_hight">Высокий уровень</span>
+                                                <button type="button" class="share-icon exercise-grid__share-icon">
+                                                    <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip01)" fill="#BDBDBD"><path d="M20.38 3.667a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 7.333a3.67 3.67 0 01-3.667-3.666A3.67 3.67 0 0117.401 0a3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 7.333zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291A2.294 2.294 0 0017.4 1.375zM20.38 18.334a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 22a3.67 3.67 0 01-3.667-3.666 3.67 3.67 0 013.667-3.667 3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 22zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291 2.294 2.294 0 00-2.292-2.292zM7.548 11a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M4.569 14.666A3.67 3.67 0 01.902 11 3.67 3.67 0 014.57 7.333 3.67 3.67 0 018.236 11a3.67 3.67 0 01-3.667 3.666zm0-5.958A2.294 2.294 0 002.277 11 2.294 2.294 0 004.57 13.29 2.294 2.294 0 006.86 11a2.294 2.294 0 00-2.292-2.292z"/><path d="M6.734 10.56a.915.915 0 01-.455-1.714l8.506-4.849a.915.915 0 011.25.343c.25.439.097 1-.342 1.25l-8.506 4.85a.911.911 0 01-.453.12zM15.238 18.123a.911.911 0 01-.453-.12l-8.506-4.85a.918.918 0 01.908-1.593l8.506 4.85a.918.918 0 01-.455 1.713z"/></g><defs><clipPath id="clip01"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+                                                </button>
+                                            </header>
+                                            <p class="exercise-grid__title">Комплекс упражнений №3</p>
+                                            <div class="exercise-grid__list">
+                                                <div class="exercise-grid__item">
+                                                    <div class="exercise-grid__item-media exercise-grid__item-media_video" style="background-image: url('img/exercise@2x.png');"></div>
+                                                    <div class="exercise-grid__item-text">
+                                                        <p>I like to use it to review the diagnosis criteria, pathophysio, treatment, and management for diseases. I highly highly recommend this app! and management for diseases.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="exercise-grid__item">
+                                                    <div class="exercise-grid__item-media exercise-grid__item-media_video" style="background-image: url('img/exercise@2x.png');"></div>
+                                                    <div class="exercise-grid__item-text">
+                                                        <p>I like to use it to review the diagnosis criteria, pathophysio, treatment, and management for diseases. I highly highly recommend this app! and management for diseases.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="exercise-grid__item">
+                                                    <div class="exercise-grid__item-media exercise-grid__item-media_video" style="background-image: url('img/exercise@2x.png');"></div>
+                                                    <div class="exercise-grid__item-text">
+                                                        <p>I like to use it to review the diagnosis criteria, pathophysio, treatment, and management for diseases. I highly highly recommend this app! and management for diseases.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="exercise-grid__footer">
+                                                <button type="button" class="btn share-button exercise-grid__share-button">
+                                                    Поделиться
+                                                    <svg class="btn__icon" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip02)" fill="#828282"><path d="M20.38 3.667a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 7.333a3.67 3.67 0 01-3.667-3.666A3.67 3.67 0 0117.401 0a3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 7.333zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291A2.294 2.294 0 0017.4 1.375zM20.38 18.334a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 22a3.67 3.67 0 01-3.667-3.666 3.67 3.67 0 013.667-3.667 3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 22zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291 2.294 2.294 0 00-2.292-2.292zM7.548 11a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M4.569 14.666A3.67 3.67 0 01.902 11 3.67 3.67 0 014.57 7.333 3.67 3.67 0 018.236 11a3.67 3.67 0 01-3.667 3.666zm0-5.958A2.294 2.294 0 002.277 11 2.294 2.294 0 004.57 13.29 2.294 2.294 0 006.86 11a2.294 2.294 0 00-2.292-2.292z"/><path d="M6.734 10.56a.915.915 0 01-.455-1.714l8.506-4.849a.915.915 0 011.25.343c.25.439.097 1-.342 1.25l-8.506 4.85a.911.911 0 01-.453.12zM15.238 18.123a.911.911 0 01-.453-.12l-8.506-4.85a.918.918 0 01.908-1.593l8.506 4.85a.918.918 0 01-.455 1.713z"/></g><defs><clipPath id="clip02"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+                                                </button>
+                                                <a href="#" class="exercise-grid__link">Подробнее</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

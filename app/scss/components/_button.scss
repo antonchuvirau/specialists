@@ -9,6 +9,8 @@
     border-radius: $button-border-radius;
     text-align: center;
     &__icon {
+        display: inline-block;
+        vertical-align: middle;
         margin-left: 10px;
     }
     &_size {
@@ -53,5 +55,10 @@
             color: $white;
             border-color: $secondary-300;
         }
+    }
+    &_disabled {
+        pointer-events: none;
+        color: $gray-50;
+        border-color: $gray-50;
     }
 }

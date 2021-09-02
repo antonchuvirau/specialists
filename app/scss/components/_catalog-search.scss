@@ -1,0 +1,63 @@
+// VARIABLES
+$catalog-search-br: 8px;
+$catalog-search-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
+
+.catalog-search {
+    position: relative;
+    &__input {
+        width: 100%;
+        padding: .7em 0;
+        font-size: 1.4rem;
+        padding-right: 2.1em;
+        border-bottom: 1px solid rgba($primary, .3);
+    }
+    &__btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        background: icon('search.svg') no-repeat 50% / 18px auto;
+        z-index: 1;
+    }
+    &__results {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-top: 10px;
+        opacity: 0;
+        transition: transform .25s ease, opacity .25s ease;
+        transform: translateY(5px);
+        pointer-events: none;
+        z-index: 3;
+        &_open {
+            transform: none;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        &-list {
+            background: $white;
+            border-radius: $catalog-search-br;
+            box-shadow: $catalog-search-shadow;
+            padding: 30px 20px;
+            padding-top: 15px;
+            padding-right: 35px;
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+            &-link {
+                color: $gray-100;
+                line-height: 1.5;
+                text-align: left;
+                text-decoration: none;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

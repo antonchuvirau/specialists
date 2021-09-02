@@ -1,0 +1,187 @@
+// VARIABLES
+$b-select-br: 8px;
+$b-select-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
+
+.b-select {
+    position: relative;
+    &__header {
+        &-button {
+            position: relative;
+            color: $gray-100;
+            line-height: 1.5;
+            padding: .5em 1.25em;
+            width: 100%;
+            text-align: left;
+            background: $white;
+            box-shadow: $b-select-shadow;
+            border-radius: $b-select-br;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 30%;
+                height: 100%;
+                background: linear-gradient(to right, rgba($white, 0), rgba($white, 1));
+                right: 0;
+                top: 0;
+                pointer-events: none;
+                z-index: 1;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 5px solid transparent;
+                border-top-color: $gray-50;
+                top: 50%;
+                margin-top: -2.5px;
+                right: 20px;
+                pointer-events: none;
+                z-index: 2;
+            }
+            &-value {
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                max-width: 90%;
+                text-overflow: clip;
+                pointer-events: none;
+            }
+        }
+    }
+    &__wrapper {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-top: 10px;
+        opacity: 0;
+        transition: transform .25s ease, opacity .25s ease;
+        transform: translateY(5px);
+        pointer-events: none;
+        z-index: 1;
+        &_open {
+            transform: none;
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+    &__container {
+        background: $white;
+        border-radius: $b-select-br;
+        box-shadow: $b-select-shadow;
+        padding: 30px 20px;
+        padding-top: 0;
+    }
+    &__show-link {
+        margin-top: 10px;
+    }
+    &__list {
+        &-item {
+            position: relative;
+            &:not(:last-child) {
+                & .b-select {
+                    &__list {
+                        &-button {
+                            border-bottom: 1px solid rgba($primary, .1);
+                        }
+                    }
+                }
+            }
+        }
+        &-button {
+            position: relative;
+            width: 100%;
+            color: $gray-100;
+            padding: 1em 0;
+            padding-right: 1em;
+            line-height: 1.5;
+            text-align: left;
+            white-space: nowrap;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 9px;
+                height: 6px;
+                background: icon('arrow-down.svg') no-repeat 50% / 9px auto;
+                top: 50%;
+                right: 0;
+                margin-top: -3px;
+                transition: transform .25s ease;
+                pointer-events: none;
+                z-index: 1;
+            }
+            &_active {
+                &::after {
+                    transform: scale(-1);
+                }
+            }
+        }
+    }
+    &__sub-list {
+        display: none;
+        padding: 5px 0;
+        &-button {
+            position: relative;
+            line-height: 1.5;
+            padding: .625em 1em;
+            padding-right: 1em;
+            color: $gray-100;
+            width: 100%;
+            text-align: left;
+            white-space: nowrap;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 10%;
+                height: 100%;
+                background: linear-gradient(to right, rgba($white, 0), rgba($white, 1));
+                right: 0;
+                top: 0;
+                pointer-events: none;
+                z-index: 1;
+            }
+            &:hover {
+                color: $primary;
+            }
+            &_active {
+                pointer-events: none;
+                color: $gray-50;
+            }
+        }
+        &_open {
+            display: block;
+        }
+    }
+    &__simple-list {
+        padding-top: 15px;
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+        &-button {
+            color: $gray-100;
+            line-height: 1.5;
+            text-align: left;
+            &:hover {
+                color: $primary;
+            }
+            &_active {
+                color: $gray-50;
+                pointer-events: none;
+            }
+        }
+    }
+    &:hover {
+        & .b-select {
+            &__header {
+                &-button {
+                    &::after {
+                        border-top-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

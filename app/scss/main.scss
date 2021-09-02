@@ -86,7 +86,8 @@ $utilities: map-get-multiple(
 
 // 2. Vendors
 @import
-  'vendors/normalize';
+  'vendors/normalize',
+  'vendors/jquerymodal';
 
 // 3. Base stuff
 @import
@@ -108,7 +109,9 @@ $utilities: map-get-multiple(
   'layout/info-section',
   'layout/rate-section',
   'layout/template',
-  'layout/catalog-template';
+  'layout/catalog-template',
+  'layout/text-section',
+  'layout/exercises-list';
 
 // 5. Components
 @import
@@ -121,7 +124,10 @@ $utilities: map-get-multiple(
   'components/advantages-item',
   'components/message',
   'components/rate-item',
-  'components/account-link';
+  'components/account-link',
+  'components/catalog-search',
+  'components/b-select',
+  'components/exercise-grid';
 
 // 6. Page-specific styles
 @import

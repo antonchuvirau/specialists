@@ -1,0 +1,114 @@
+.exercise-grid {
+    padding: 30px 15px;
+    padding-bottom: 45px;
+    border-radius: 30px;
+    box-shadow: 0 0 1px 0 rgba(69, 157, 239, .5), 0 4px 20px 0 rgba(69, 157, 239, .07);
+    @each $level in start, middle, hight {
+        &_#{$level} {
+            background: rgba(map-get($levels, #{$level}), .05);
+        }
+    }
+    &__header {
+        @include flex(row, center);
+        margin-bottom: 25px;
+    }
+    &__share {
+        &-icon {
+            margin-left: auto;
+            width: 22px;
+            height: 22px;
+        }
+    }
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $white;
+        border-radius: 20px;
+        padding: .8em 1.25em;
+        background: $gray;
+        @each $level in start, middle, hight {
+            &_#{$level} {
+                background: map-get($levels, #{$level});
+            }
+        }
+    }
+    &__title {
+        margin: 0;
+        line-height: 1.5;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    &__item {
+        padding-bottom: 30px;
+        &-text {
+            margin-top: 20px;
+            & p {
+                margin: 0;
+                line-height: 1.45;
+                color: $gray-100;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &-media {
+            position: relative;
+            width: 100%;
+            height: 9.8vw;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: linear-gradient(0deg, rgba($primary, .2), rgba($primary, .2));
+                pointer-events: none;
+                z-index: 1;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 32px;
+                background: icon('play-button.svg') no-repeat 50% / 50px auto;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                pointer-events: none;
+                z-index: 2;
+            }
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba($primary, .1);
+            margin-bottom: 30px;
+        }
+    }
+    &__footer {
+        @include flex(row, center);
+    }
+    &__link {
+        line-height: 1.5;
+        color: $gray;
+        font-weight: 600;
+        margin-left: 30px;
+        &:hover {
+            opacity: .85;
+        }
+    }
+    &__share-button {
+        @include flex(row, center);
+        color: $gray;
+        border-color: $gray;
+        background: rgba($white, .7);
+        &:hover {
+            color: $gray;
+            border-color: $gray-50;
+        }
+    }
+}
