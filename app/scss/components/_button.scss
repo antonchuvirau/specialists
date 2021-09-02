@@ -56,6 +56,15 @@
             border-color: $secondary-300;
         }
     }
+    &_share {
+        background: rgba($white, .7);
+        border-color: $gray;
+        color: $gray;
+        &:hover {
+            border-color: $gray-50;
+            color: $gray;
+        }
+    }
     &_disabled {
         pointer-events: none;
         color: $gray-50;

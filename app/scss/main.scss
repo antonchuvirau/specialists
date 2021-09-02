@@ -112,7 +112,9 @@ $utilities: map-get-multiple(
   'layout/catalog-template',
   'layout/text-section',
   'layout/exercises-list',
-  'layout/articles-template';
+  'layout/articles-template',
+  'layout/exercise-template',
+  'layout/exercise-box';
 
 // 5. Components
 @import

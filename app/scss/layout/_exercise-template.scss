@@ -1,0 +1,8 @@
+.exercise-template {
+    &__grid {
+        padding: 65px 40px;
+        background: rgba($primary, .05);
+        border-radius: 30px;
+        box-shadow: 0 0px 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
+    }
+}
