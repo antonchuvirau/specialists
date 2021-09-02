@@ -41,6 +41,12 @@
                 margin-top: 20px;
             }
         }
+        &_width {
+            &-full {
+                max-width: 100%;
+                flex: 1 1 auto;
+            }
+        }
     }
     &__label {
         display: block;
@@ -55,6 +61,7 @@
         }
     }
     &__input {
+        width: 100%;
         & input {
             width: 100%;
             height: 40px;
