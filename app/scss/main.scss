@@ -128,7 +128,9 @@ $utilities: map-get-multiple(
   'components/catalog-search',
   'components/b-select',
   'components/exercise-grid',
-  'components/modal';
+  'components/modal',
+  'components/form',
+  'components/radio-item';
 
 // 6. Page-specific styles
 @import
