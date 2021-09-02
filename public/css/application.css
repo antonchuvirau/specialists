@@ -5001,6 +5001,7 @@ h1 {
 
 .video-modal {
   max-width: 925px;
+  padding: 0;
   border: 16px solid #fff; }
 
 .sharing-modal {
