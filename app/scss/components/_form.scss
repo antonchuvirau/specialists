@@ -36,6 +36,11 @@
         &:not(:last-child) {
             margin-right: 30px;
         }
+        &_column {
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
     }
     &__label {
         display: block;
@@ -44,6 +49,9 @@
         margin-bottom: 10px;
         &-note {
             color: $primary;
+        }
+        &_light {
+            color: $gray-50;
         }
     }
     &__input {
@@ -58,5 +66,8 @@
                 border-color: $primary;
             }
         }
+    }
+    &__privacy {
+        margin-top: 35px;
     }
 }
