@@ -3,9 +3,6 @@
         padding: 120px 0;
         padding-bottom: 160px;
     }
-    &__breadcrumbs {
-        margin-bottom: 50px;
-    }
     &__options {
         @include flex(row, center);
         &-search {

@@ -111,7 +111,8 @@ $utilities: map-get-multiple(
   'layout/template',
   'layout/catalog-template',
   'layout/text-section',
-  'layout/exercises-list';
+  'layout/exercises-list',
+  'layout/articles-template';
 
 // 5. Components
 @import
@@ -130,7 +131,8 @@ $utilities: map-get-multiple(
   'components/exercise-grid',
   'components/modal',
   'components/form',
-  'components/radio-item';
+  'components/radio-item',
+  'components/article-item';
 
 // 6. Page-specific styles
 @import

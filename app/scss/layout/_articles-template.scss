@@ -1,0 +1,14 @@
+.articles-template {
+    &__footer {
+        @include flex(row, center, center);
+        margin-top: 30px;
+    }
+    &__list {
+        &-col {
+            margin-bottom: 30px;
+        }
+        &-item {
+            height: 100%;
+        }
+    }
+}
