@@ -1,0 +1,104 @@
+.subscription-personal-data {
+    position: relative;
+    &__list {
+        &-item {
+            position: relative;
+            @include flex(row, center);
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+        &-name {
+            width: 135px;
+            flex: 0 0 135px;
+            margin-right: 10px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $gray;
+        }
+        &-value {
+            position: relative;
+            & span {
+                display: block;
+                width: 235px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: 1.5;
+                font-weight: 600;
+                color: $gray-100;
+            }
+        }
+        &-input {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 235px;
+            height: 40px;
+            background: $white;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            box-shadow: 0 0 1px 0 rgba($primary-inner, .5), 0 4px 20px 0 rgba($primary-inner, .07);
+            z-index: 1;
+            &:focus {
+                border-color: $primary-inner;
+            }
+            &_is {
+                &-disabled {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+        }
+        &-edit-btn {
+            position: absolute;
+            top: 50%;
+            left: calc(100% + 25px);
+            width: 24px;
+            height: 24px;
+            margin-top: -12px;
+            background: icon('edit.svg') no-repeat 50% / 24px auto;
+            z-index: 1;
+            &_is {
+                &-disabled {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+        }
+        &-save-btn {
+            position: absolute;
+            top: 50%;
+            left: calc(100% + 25px);
+            width: 24px;
+            height: 24px;
+            margin-top: -12px;
+            background: icon('save.svg') no-repeat 50% / 24px auto;
+            z-index: 1;
+            &_is {
+                &-disabled {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    &__exit-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include flex(row, center);
+        line-height: 1.5;
+        color: $primary-inner;
+        text-decoration: none;
+        & svg {
+            flex-shrink: 0;
+            margin-left: 10px;
+        }
+        &:hover {
+            opacity: .85;
+        }
+    }
+}

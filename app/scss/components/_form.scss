@@ -73,6 +73,14 @@
                 border-color: $primary;
             }
         }
+        &_inner-green {
+            & input {
+                box-shadow: 0 0 1px 0 rgba($primary-inner, .5), 0 4px 20px 0 rgba($primary-inner, .07);
+                &:focus {
+                    border-color: $primary-inner;
+                }
+            }
+        }
     }
     &__privacy {
         margin-top: 35px;

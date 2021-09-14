@@ -1,0 +1,24 @@
+.result-template {
+    &__grid {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        &-header {
+            @include flex(row, center, center);
+            padding-bottom: 45px;
+            border-bottom: 1px solid rgba($primary-inner, .2);
+        }
+        &-title {
+            line-height: 1.5;
+            font-weight: 600;
+            color: $gray-100;
+            margin-left: 35px;
+        }
+        &-btn {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 50px;
+        }
+    }
+}

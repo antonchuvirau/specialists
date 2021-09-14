@@ -27,6 +27,16 @@ function onDocumentClickHandler(evt) {
             targetSubListElement.classList.toggle(`b-select__sub-list_open`);
         }
     }
+    if (target.matches(`.subscription-personal-data__list-edit-btn`)) {
+        target.classList.toggle(`subscription-personal-data__list-edit-btn_is-disabled`);
+        target.parentElement.querySelector(`.subscription-personal-data__list-input`).classList.remove(`subscription-personal-data__list-input_is-disabled`);
+        target.parentElement.querySelector(`.subscription-personal-data__list-save-btn`).classList.remove(`subscription-personal-data__list-save-btn_is-disabled`);
+    }
+    if (target.matches(`.subscription-personal-data__list-save-btn`)) {
+        target.classList.toggle(`subscription-personal-data__list-save-btn_is-disabled`);
+        target.parentElement.querySelector(`.subscription-personal-data__list-input`).classList.add(`subscription-personal-data__list-input_is-disabled`);
+        target.parentElement.querySelector(`.subscription-personal-data__list-edit-btn`).classList.remove(`subscription-personal-data__list-edit-btn_is-disabled`);
+    }
 }
 
 document.addEventListener(`DOMContentLoaded`, () => {

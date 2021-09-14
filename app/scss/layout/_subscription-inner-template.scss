@@ -1,0 +1,33 @@
+.subscription-inner-template {
+    &__grid {
+        margin-top: 55px;
+    }
+    &__section {
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+        &-title {
+            display: block;
+            font-size: 2.4rem;
+            line-height: 1.35;
+            color: $black;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        &-content {
+            & p {
+                margin: 0;
+                line-height: 1.5;
+                color: $gray-100;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

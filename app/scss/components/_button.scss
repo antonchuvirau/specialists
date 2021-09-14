@@ -76,6 +76,15 @@
             color: $white;
         }
     }
+    &_inner-bg {
+        background: rgba($black, .4);
+        color: $white;
+        &:hover {
+            background: $primary-inner;
+            border-color: $primary-inner;
+            color: $white;
+        }
+    }
     &_share {
         background: rgba($white, .7);
         border-color: $gray;

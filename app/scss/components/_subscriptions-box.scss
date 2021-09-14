@@ -1,0 +1,26 @@
+// VARIABLES
+$subscriptions-box-br: 32px;
+
+.subscriptions-box {
+    &__title {
+        display: block;
+        margin: 0;
+        text-transform: uppercase;
+        color: $gray-50;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+    &__wrapper {
+        padding: 60px 40px;
+        padding-bottom: 50px;
+        background: $white;
+        border-radius: $subscriptions-box-br;
+        box-shadow: 0 0 1px 0 rgba($primary-inner, .5), 0 4px 20px 0 rgba($primary-inner, .07);
+    }
+    &__btn {
+        margin-top: 60px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

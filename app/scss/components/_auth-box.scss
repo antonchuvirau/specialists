@@ -27,6 +27,12 @@
                 font-size: 1.4rem;
                 color: $gray;
                 line-height: 1.45;
+                & a {
+                    color: $gray;
+                    &:hover {
+                        opacity: .85;
+                    }
+                }
             }
         }
     }
