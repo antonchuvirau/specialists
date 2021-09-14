@@ -18,6 +18,9 @@ function onDocumentClickHandler(evt) {
             targetSubListElement.classList.toggle(`b-select__sub-list_open`);
         }
     }
+    if (target.matches(`.faq-box__list-item-title`)) {
+        target.classList.toggle(`faq-box__list-item-title_active`);
+    }
     if (target.matches(`.subscription-personal-data__list-edit-btn`)) {
         target.classList.toggle(`subscription-personal-data__list-edit-btn_is-disabled`);
         target.parentElement.querySelector(`.subscription-personal-data__list-input`).classList.remove(`subscription-personal-data__list-input_is-disabled`);

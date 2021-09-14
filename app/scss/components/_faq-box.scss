@@ -1,0 +1,100 @@
+// VARIABLES
+$faq-br: 32px;
+
+.faq-box {
+    &__header {
+        @include flex(row, center);
+        &-button {
+            background: $white;
+            box-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
+            border-radius: $faq-br;
+            font-weight: 600;
+            color: $gray-50;
+            line-height: 1.5;
+            padding: .375em 2.2em;
+            &:hover {
+                background: $primary;
+                color: $white;
+            }
+            &:not(:first-child) {
+                margin-left: 25px;
+            }
+            &_active {
+                background: $primary;
+                color: $white;
+            }
+        }
+        &-link {
+            margin-left: auto;
+            color: $primary;
+            text-decoration: underline;
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+    &__list {
+        margin-top: 35px;
+        padding: 35px 100px;
+        background: $white;
+        box-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
+        border-radius: $faq-br;
+        &-item {
+            padding: 30px 0;
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba($primary, .2);
+            }
+            &-content {
+                display: none;
+                padding-top: 30px;
+                & p {
+                    margin: 0;
+                    line-height: 1.5;
+                    font-size: 1.6rem;
+                    color: $gray;
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+                & iframe {
+                    border-radius: 35px;
+                    &:not(:first-child) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            &-title {
+                position: relative;
+                display: block;
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: $black;
+                line-height: 1.5;
+                cursor: pointer;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    background: icon('minus.svg') no-repeat 50% / 12px auto;
+                    top: 6px;
+                    right: calc(100% + 30px);
+                }
+                &_active {
+                    &::before {
+                        background: icon('plus.svg') no-repeat 50% / 12px auto;
+                    }
+                    & + .faq-box {
+                        &__list {
+                            &-item {
+                                &-content {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
