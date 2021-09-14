@@ -72,7 +72,7 @@
                                 <span class="hero__advantages-item">Текст преимущества 2</span>
                                 <span class="hero__advantages-item">Текст преимущества 3</span>
                             </div>
-                            <a href="#" class="video-section hero__video" style="background-image: url('img/video@2x.png');"></a>
+                            <a href="#video-modal" rel="modal:open" class="video-section hero__video" style="background-image: url('img/video@2x.png');"></a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                                         <div class="message__text">
                                             <p>This is the Google for doctors! Most medical schools give students access to UptoDate (I believe the subscription for it is really pricey!). So, check with check with your before.</p>
                                         </div>
-                                        <a class="btn btn_green message__btn" href="#">Попробовать</a>
+                                        <a href="#order-modal" rel="modal:open" class="btn btn_green message__btn">Попробовать</a>
                                     </div>
                                     <div class="message__col message__list">
                                         <ul>
@@ -172,7 +172,7 @@
                                                         </ul>
                                                     </div>
                                                     <footer class="rate-item__options">
-                                                        <span class="rate-item__price">1400 р<span class="rate-item__price-sale">-10%</span></span>
+                                                        <span class="rate-item__price">1400 р<span class="rate-item__price-old">1600</span></span>
                                                         <a href="#" class="btn btn_default rate-item__btn">Купить</a>
                                                     </footer>
                                                 </div>
@@ -442,7 +442,110 @@
     </footer>
     <!-- End footer -->
     <!-- Begin modal -->
-    <div class="modal"></div>
+    <div id="video-modal" class="modal video-modal">
+        <iframe width="100%" height="525" src="https://www.youtube.com/embed/WdYdsI9Dhio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="sharing-modal" class="modal sharing-modal">
+        <div class="modal__grid">
+            <header class="modal__header">
+                <span class="modal__label">отправить</span>
+                <p class="modal__title">Тендопатия/тендинит ротарной манжеты</p>
+                <div class="sharing-modal__meta">
+                    <span class="sharing-modal__label sharing-modal__label_start sharing-modal__meta-item">Легкий уровень</span>
+                    <span class="sharing-modal__exercise sharing-modal__meta-item">Комплекс упражнений №1</span>
+                </div>
+            </header>
+            <div class="modal__content">
+                <form class="form sharing-modal__form">
+                    <section class="form__section">
+                        <span class="form__section-title">способ  отправки</span>
+                        <div class="form__section-grid">
+                            <label class="radio-item form__radio-item form__section-radio">
+                                <input type="radio" checked name="type" class="radio-item__input">
+                                <span class="radio-item__name">По почте</span>
+                            </label>
+                            <label class="radio-item form__radio-item form__section-radio">
+                                <input type="radio" name="type" class="radio-item__input">
+                                <span class="radio-item__name">Viber</span>
+                            </label>
+                            <label class="radio-item form__radio-item form__section-radio">
+                                <input type="radio" name="type" class="radio-item__input">
+                                <span class="radio-item__name">WhatsApp</span>
+                            </label>
+                            <label class="radio-item form__radio-item form__section-radio">
+                                <input type="radio" name="type" class="radio-item__input">
+                                <span class="radio-item__name">Telegram</span>
+                            </label>
+                            <label class="radio-item form__radio-item form__section-radio">
+                                <input type="radio" name="type" class="radio-item__input">
+                                <span class="radio-item__name">Получить ссылку</span>
+                            </label>
+                        </div>
+                    </section>
+                    <div class="form__row">
+                        <div class="form__container">
+                            <label class="form__label">Телефон <span class="form__label-note">*</span></label>
+                            <div class="form__input">
+                                <input type="tel" name="tel" placeholder="Введите номер телефона для отправки">
+                            </div>
+                        </div>
+                        <div class="form__container">
+                            <label class="form__label">Почта <span class="form__label-note">*</span></label>
+                            <div class="form__input">
+                                <input type="email" name="email" placeholder="Введите почту для отправки">
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="form__footer">
+                        <button type="button" data-modal="#success-modal" class="btn btn_size-s btn_default form__btn">Отправить</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="success-modal" class="modal success-modal">
+        <div class="modal__grid success-modal__grid">
+            <img class="success-modal__icon" src="img/modal-success.svg" alt="alt">
+            <span class="success-modal__title">Ссылка для просмотра успешно отправлена</span>
+            <a href="#close" rel="modal:close" class="btn btn_size-s btn_default success-modal__btn">Закрыть</a>
+        </div>
+    </div>
+    <div id="order-modal" class="modal order-modal">
+        <div class="modal__grid">
+            <header class="modal__header order-modal__header">
+                <span class="modal__title modal__title_align-center order-modal__title">Оставить заявку</span>
+            </header>
+            <div class="modal__content">
+                <form class="form order-modal__form">
+                    <div class="form__container form__container_column form__container_width-full">
+                        <label class="form__label form__label_light">Ваше имя</label>
+                        <div class="form__input">
+                            <input type="text" name="text" placeholder="Введите ваше имя">
+                        </div>
+                    </div>
+                    <div class="form__container form__container_column form__container_width-full">
+                        <label class="form__label form__label_light">Телефон</label>
+                        <div class="form__input">
+                            <input type="tel" name="tel" placeholder="Введите номер телефона для отправки">
+                        </div>
+                    </div>
+                    <div class="form__container form__container_column form__container_width-full">
+                        <label class="form__label form__label_light">Почта</label>
+                        <div class="form__input">
+                            <input type="email" name="email" placeholder="Введите почту для отправки">
+                        </div>
+                    </div>
+                    <label class="checkbox-item form__privacy">
+                        <input type="checkbox" checked name="privacy" class="checkbox-item__input">
+                        <span class="checkbox-item__name">Согласен с <a href="#">пользовательским соглашением</a></span>
+                    </label>
+                    <footer class="form__footer">
+                        <button type="button" data-modal="#success-modal" class="btn btn_default form__btn">Отправить</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- End modal -->
     <!-- BEGIN scripts -->
     <script src="js/application.js"></script>
