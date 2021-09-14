@@ -1,0 +1,82 @@
+// VARIABLES
+$inner-catalog-item-br: 32px;
+
+.inner-catalog-item {
+    position: relative;
+    @include flex(column, stretch);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 20px;
+    border-radius: $inner-catalog-item-br;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: $inner-catalog-item-br;
+        background: rgba($black, .3);
+        pointer-events: none;
+        z-index: -1;
+    }
+    &__header {
+        @include flex(row, center);
+        margin-bottom: 25px;
+    }
+    &__content {
+        flex: 1 1 auto;
+        max-width: 250px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        &_size {
+            &-m {
+                max-width: 475px;
+            }
+        }
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            text-align: center;
+            line-height: 1.3;
+            text-shadow: 0 0 12px rgba($black, .38);
+            color: $white;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__info {
+        @include flex(row, center);
+        margin-top: 5px;
+        &-item {
+            color: $white;
+            line-height: 1.5;
+            & span {
+                font-weight: 600;
+                font-size: 2.4rem;
+            }
+            &:last-child {
+                margin-left: auto;
+            }
+        }
+    }
+    &__footer {
+        margin-top: auto;
+    }
+    &__link {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__price {
+        margin-left: auto;
+        color: $white;
+        & span {
+            font-size: 2.4rem;
+            font-weight: 600;
+        }
+    }
+}

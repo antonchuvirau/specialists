@@ -1,0 +1,30 @@
+.expire-access-box {
+    &__text {
+        margin: 0;
+        text-align: center;
+        line-height: 1.5;
+        color: $gray;
+    }
+    &__price {
+        margin: 0;
+        @include flex(row, center, center);
+        color: $gray-100;
+        margin-top: 7px;
+        &-value {
+            font-weight: 600;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $black;
+            margin-left: 15px;
+        }
+    }
+    &__options {
+        @include flex(row, center, center);
+        margin-top: 7px;
+    }
+    &__btn {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}

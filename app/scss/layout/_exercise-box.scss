@@ -25,7 +25,7 @@
         border-radius: 20px;
         padding: .8em 1.25em;
         background: $gray;
-        @each $level in start, middle, hight {
+        @each $level in start, middle, high {
             &_#{$level} {
                 background: map-get($levels, #{$level});
             }
@@ -64,9 +64,9 @@
             padding: 30px 0;
             &-video {
                 position: relative;
-                width: 100%;
-                max-width: 570px;
-                height: 16.7vw;
+                width: 570px;
+                flex: 1 0 570px;
+                height: 320px;
                 margin-right: 35px;
                 border-radius: 30px;
                 background-size: cover;
@@ -119,5 +119,27 @@
                 padding-bottom: 0;
             }
         }
+    }
+    &__expire-time {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: $gray;
+        line-height: 1.5;
+        z-index: 1;
+    }
+    &__grid {
+        &_is {
+            &-disabled {
+                filter: blur(2.5px);
+                pointer-events: none;
+            }
+        }
+    }
+    &__expire-access {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
     }
 }

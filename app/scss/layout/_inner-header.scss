@@ -1,0 +1,35 @@
+.inner-header {
+    &__wrapper {
+        padding: 20px 0;
+    }
+    &__logo {
+        display: block;
+    }
+    &__links {
+        @include flex(row, center, flex-end);
+        &-item {
+            text-decoration: none;
+            font-weight: 600;
+            color: $primary-inner;
+            line-height: 1.5;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            &_border {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    border-bottom: 1px dashed $primary-inner;
+                    top: 100%;
+                    left: 0;
+                }
+            }
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+}

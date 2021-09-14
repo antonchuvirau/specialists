@@ -116,7 +116,12 @@ $utilities: map-get-multiple(
   'layout/exercise-template',
   'layout/exercise-box',
   'layout/auth-template',
-  'layout/auth-box';
+  'layout/auth-box',
+  'layout/inner-header',
+  'layout/inner-footer',
+  'layout/inner-template',
+  'layout/inner-catalog',
+  'layout/inner-exercise-template';
 
 // 5. Components
 @import
@@ -137,7 +142,12 @@ $utilities: map-get-multiple(
   'components/form',
   'components/radio-item',
   'components/article-item',
-  'components/checkbox-item';
+  'components/checkbox-item',
+  'components/inner-catalog-item',
+  'components/level',
+  'components/lecture-item',
+  'components/schedule-list',
+  'components/expire-access-box';
 
 // 6. Page-specific styles
 @import

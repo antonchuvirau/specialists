@@ -1,0 +1,17 @@
+// VARIABLES
+$label-br: 19px;
+
+.level {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: $white;
+    font-weight: 600;
+    line-height: 2;
+    padding: .16em 1.3em;
+    border-radius: $label-br;
+    @each $level in start, middle, high {
+        &_#{$level} {
+            background: map-get($levels, #{$level});
+        }
+    }
+}

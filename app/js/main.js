@@ -24,7 +24,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
     // VARIABLES
     const accountNotificationsOpenButton = document.querySelector(`.account-link__value`);
     // EVENTS
-    accountNotificationsOpenButton.addEventListener(`click`, onAccountNotificationsOpenButtonClickHandler);
+    if (accountNotificationsOpenButton) {
+        accountNotificationsOpenButton.addEventListener(`click`, onAccountNotificationsOpenButtonClickHandler);
+    }
 });
 
 document.addEventListener(`click`, onDocumentClickHandler);

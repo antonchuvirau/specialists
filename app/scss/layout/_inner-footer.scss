@@ -1,0 +1,10 @@
+.inner-footer {
+    background: $primary-inner;
+    &__social {
+        @include flex(row, flex-start, flex-end);
+        &-title {
+            margin: 0;
+            margin-right: 25px;
+        }
+    }
+}

@@ -56,6 +56,26 @@
             border-color: $secondary-300;
         }
     }
+    &_inner-green {
+        background: transparent;
+        color: $primary-inner;
+        border-color: $primary-inner;
+        &:hover {
+            background: $primary-inner;
+            border-color: $primary-inner;
+            color: $white;
+        }
+    }
+    &_inner-full-green {
+        background: $primary-inner;
+        color: $white;
+        border-color: $primary-inner;
+        &:hover {
+            background: darken($primary-inner, 3%);
+            border-color: darken($primary-inner, 3%);
+            color: $white;
+        }
+    }
     &_share {
         background: rgba($white, .7);
         border-color: $gray;

@@ -1,3 +1,7 @@
 .catalog-template {
     background: image('catalog-bg.svg') no-repeat 50% / 100% auto;
+    &__search {
+        flex: 1 1 470px;
+        max-width: 470px;
+    }
 }

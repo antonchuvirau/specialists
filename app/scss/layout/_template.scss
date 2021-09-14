@@ -3,13 +3,16 @@
         padding: 120px 0;
         padding-bottom: 160px;
     }
+    &__breadcrumbs {
+        margin-bottom: 50px;
+    }
     &__options {
         @include flex(row, center);
         &-search {
             margin-left: auto;
             width: 100%;
-            flex: 1 1 470px;
-            max-width: 470px;
+            flex: 1 1 270px;
+            max-width: 270px;
         }
         &-select {
             width: 100%;
