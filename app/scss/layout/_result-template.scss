@@ -3,10 +3,18 @@
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
+        &_width {
+            &-full {
+                max-width: none;
+            }
+        }
         &-header {
             @include flex(row, center, center);
             padding-bottom: 45px;
-            border-bottom: 1px solid rgba($primary-inner, .2);
+            border-bottom: 1px solid rgba($primary, .2);
+            &_inner {
+                border-bottom-color: rgba($primary-inner, .2);
+            }
         }
         &-title {
             line-height: 1.5;
@@ -20,5 +28,8 @@
             transform: translateX(-50%);
             margin-top: 50px;
         }
+    }
+    &__rate-section {
+        margin-top: 80px;
     }
 }
