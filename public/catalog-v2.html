@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <title>Семинары</title>
+    <title>Каталог</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -82,8 +82,8 @@
     </header>
     <!-- End header -->
     <!-- Begin main -->
-    <main class="main template auth-template">
-        <div class="template__wrapper auth-template__wrapper">
+    <main class="main template catalog-template">
+        <div class="template__wrapper catalog-template__wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -93,43 +93,99 @@
                                 <a class="breadcrumbs__link breadcrumbs__link_is-dark breadcrumbs__text">Хлебные крошки</a>
                             </div>
                         </div>
-                        <div class="template__grid auth-template__grid">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-lg-7">
-                                    <div class="auth-box">
-                                        <header class="auth-box__header">
-                                            <p class="auth-box__title">Регистрация</p>
-                                        </header>
-                                        <div class="auth-box__grid">
-                                            <form class="form auth-form auth-box__form">
-                                                <div class="form__container form__container_width-full">
-                                                    <label class="form__label form__label_light">Введите ваш номер телефона</label>
-                                                    <div class="form__input">
-                                                        <input type="tel" value="+375295939455" name="tel">
-                                                    </div>
-                                                </div>
-                                                <label class="checkbox-item form__privacy">
-                                                    <input type="checkbox" name="privacy" class="checkbox-item__input">
-                                                    <span class="checkbox-item__name">Согласен с <a href="#">пользовательским соглашением</a></span>
-                                                </label>
-                                                <footer class="form__footer">
-                                                    <button type="submit" class="btn btn_size-s btn_default form__btn">Отправить смс-код</button>
-                                                </footer>
-                                            </form>
-                                        </div>
-                                        <footer class="auth-box__footer">
-                                            <div class="auth-box__text">
-                                                <ul>
-                                                    <li>Для регистрации и авторизации мы используем ваш номер телефона.</li>
-                                                    <li>Вход в личный кабинет осуществляется по коду, который мы отправляем через смс.</li>
+                        <div class="template__grid">
+                            <div class="row">
+                                <div class="col-4 template__grid-col">
+                                    <div class="b-catalog-box">
+                                        <div class="b-catalog-box__wrapper">
+                                            <header class="b-catalog-box__header">
+                                                <span class="b-catalog-box__header-title">Каталог диагнозов</span>
+                                            </header>
+                                            <div class="b-catalog-box__grid">
+                                                <ul class="list b-catalog-box__list">
+                                                    <li class="b-catalog-box__list-item">
+                                                        <button type="button" class="b-catalog-box__list-link">Частые диагнозы</button>
+                                                        <ul class="list b-catalog-box__sub-list">
+                                                            <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Атроз АКС</a></li>
+                                                            <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Растяжение / разрыв АКС</a></li>
+                                                            <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Состояние после перелома ключицы</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="b-catalog-box__list-item">
+                                                        <button type="button" class="b-catalog-box__list-link">Общий каталог</button>
+                                                        <ul class="list b-catalog-box__dropdown-list">
+                                                            <li class="b-catalog-box__dropdown-list-item">
+                                                                <button type="button" class="b-catalog-box__dropdown-list-link">Рука</button>
+                                                                <ul class="list b-catalog-box__sub-list">
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Атроз АКС</a></li>
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Растяжение / разрыв АКС</a></li>
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Состояние после перелома ключицы</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="b-catalog-box__dropdown-list-item">
+                                                                <button type="button" class="b-catalog-box__dropdown-list-link">Нога</button>
+                                                                <ul class="list b-catalog-box__sub-list">
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Атроз АКС</a></li>
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Растяжение / разрыв АКС</a></li>
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Состояние после перелома ключицы</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="b-catalog-box__dropdown-list-item">
+                                                                <button type="button" class="b-catalog-box__dropdown-list-link">Спина</button>
+                                                                <ul class="list b-catalog-box__sub-list">
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Атроз АКС</a></li>
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Растяжение / разрыв АКС</a></li>
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Состояние после перелома ключицы</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="b-catalog-box__dropdown-list-item">
+                                                                <button type="button" class="b-catalog-box__dropdown-list-link">Шея</button>
+                                                                <ul class="list b-catalog-box__sub-list">
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Атроз АКС</a></li>
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Растяжение / разрыв АКС</a></li>
+                                                                    <li class="b-catalog-box__sub-list-item"><a href="#" class="b-catalog-box__sub-list-link">Состояние после перелома ключицы</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
                                                 </ul>
                                             </div>
-                                            <div class="auth-box__help">
-                                                <span class="auth-box__help-text">Не зарегистрированы?</span>
-                                                <a href="#" class="auth-box__help-link">Пройти регистрацию</a>
-                                            </div>
-                                        </footer>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="col-8 template__grid-col">
+                                    <div class="catalog-template__search catalog-template__search_width-full">
+                                        <form class="catalog-search template__options-form">
+                                            <input class="catalog-search__input" value="Регион" type="text" name="search" placeholder="Поиск">
+                                            <button type="submit" class="catalog-search__btn"></button>
+                                            <div class="catalog-search__results catalog-search__results_open">
+                                                <ul class="list catalog-search__results-list">
+                                                    <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Артроз плечевого сустава</a></li>
+                                                    <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Привычный вывих плеча/нестабильность плечевого сустава</a></li>
+                                                    <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Адгезивный капсулит/ Синдром замороженное плеча</a></li>
+                                                    <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Состояние после перелома плеча</a></li>
+                                                    <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Тендинопатия/тендинит длинной головки бицепса плеча</a></li>
+                                                    <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Состояние после вывиха плеча</a></li>
+                                                    <li class="catalog-search__results-list-item"><a href="#" class="catalog-search__results-list-link">Состояние после артроскопической операция плеча</a></li>
+                                                </ul>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <section class="text-section template__grid-text">
+                                        <div class="text-section__wrapper text-section__wrapper_size-s">
+                                            <div class="text-section__content text-section__wrapper-item text-section__wrapper-item_size-s">
+                                                <span class="text-section__note">инструкция</span>
+                                                <h2 class="text-section__content-title">Как работать в нашем сервисе</h2>
+                                                <div class="text-section__content-text">
+                                                    <p>This is the Google for doctors! Most medical schools give students access to UptoDate (I believe the subscription for it is really pricey!). So, check with your school before you purchase it! It’s the perfect tool to read up on your patients’ conditions. I like to use it to review the diagnosis criteria, pathophysiology, treatment, and management for diseases. I highly highly recommend this app!</p>
+                                                    <p>So, check with your school before you purchase it! It’s the perfect tool to read up on your patients’ conditions.</p>
+                                                </div>
+                                            </div> 
+                                            <div data-modal="#video-modal" class="text-section__media text-section__media_size-s text-section__wrapper-item text-section__wrapper-item_size-s">
+                                                <div style="background-image: url('img/video-block@2x.png');" class="text-section__media-video"></div>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
                             </div>
                         </div>

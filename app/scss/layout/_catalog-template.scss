@@ -3,5 +3,14 @@
     &__search {
         flex: 1 1 470px;
         max-width: 470px;
+        &_width {
+            &-full {
+                flex: 1 1 auto;
+                max-width: none;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
     }
 }

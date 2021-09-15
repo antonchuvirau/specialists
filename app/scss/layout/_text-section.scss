@@ -1,6 +1,6 @@
 .text-section {
     &__wrapper {
-        @include flex(row, center);
+        @include flex();
         position: relative;
         padding: 55px 40px;
         background: $white;
@@ -11,12 +11,26 @@
             &:not(:last-child) {
                 margin-right: 45px;
             }
+            &_size {
+                &-s {
+                    &:not(:last-child) {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+        &_size {
+            &-s {
+                padding: 20px;
+                padding-bottom: 60px;
+            }
         }
     }
     &__media {
         width: 570px;
         height: 320px;
         flex-shrink: 0;
+        margin-top: 35px;
         &-video {
             position: relative;
             width: 100%;
@@ -27,6 +41,7 @@
             background-position: 50%;
             overflow: hidden;
             cursor: pointer;
+            z-index: 2;
             &::after {
                 content: '';
                 position: absolute;
@@ -50,14 +65,27 @@
                 z-index: 1;
             }
         }
+        &_size {
+            &-s {
+                width: 350px;
+                height: 195px;
+                flex: 0 0 350px;
+                & .text-section {
+                    &__media {
+                        &-video {
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
     &__note {
-        position: absolute;
-        top: 30px;
-        left: 40px;
+        display: block;
         text-transform: uppercase;
         font-weight: 600;
         color: $gray-50;
+        margin-bottom: 10px;
     }
     &__content {
         &-title {

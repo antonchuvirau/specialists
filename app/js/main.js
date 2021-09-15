@@ -31,6 +31,30 @@ function onDocumentClickHandler(evt) {
         target.parentElement.querySelector(`.subscription-personal-data__list-input`).classList.add(`subscription-personal-data__list-input_is-disabled`);
         target.parentElement.querySelector(`.subscription-personal-data__list-edit-btn`).classList.remove(`subscription-personal-data__list-edit-btn_is-disabled`);
     }
+    if (target.matches(`.b-catalog-box__list-link`)) {
+        const targetSubElement = target.nextElementSibling;
+        target.classList.toggle(`b-catalog-box__list-link_is-active`);
+        if (targetSubElement) {
+            if (targetSubElement.classList.contains(`b-catalog-box__sub-list`)) {
+                targetSubElement.classList.toggle(`b-catalog-box__sub-list_is-opened`);
+            }
+            else if (targetSubElement.classList.contains(`b-catalog-box__dropdown-list`)) {
+                targetSubElement.classList.toggle(`b-catalog-box__dropdown-list_is-opened`);
+            }
+        }
+    }
+    if (target.matches(`.b-catalog-box__dropdown-list-link`)) {
+        const targetSubElement = target.nextElementSibling;
+        target.classList.toggle(`b-catalog-box__dropdown-list-link_is-active`);
+        if (targetSubElement) {
+            if (targetSubElement.classList.contains(`b-catalog-box__sub-list`)) {
+                targetSubElement.classList.toggle(`b-catalog-box__sub-list_is-opened`);
+            }
+            else if (targetSubElement.classList.contains(`b-catalog-box__dropdown-list`)) {
+                targetSubElement.classList.toggle(`b-catalog-box__dropdown-list_is-opened`);
+            }
+        }
+    }
 }
 
 document.addEventListener(`DOMContentLoaded`, () => {
