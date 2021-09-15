@@ -51,4 +51,11 @@
             }
         }
     }
+    &__note {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 1.35;
+        color: $gray-100;
+        margin-top: 50px;
+    }
 }

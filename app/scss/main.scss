@@ -144,7 +144,6 @@ $utilities: map-get-multiple(
   'components/catalog-search',
   'components/b-select',
   'components/exercise-grid',
-  'components/modal',
   'components/form',
   'components/radio-item',
   'components/article-item',
@@ -155,6 +154,7 @@ $utilities: map-get-multiple(
   'components/schedule-list',
   'components/expire-access-box',
   'components/auth-box',
+  'components/modal',
   'components/subscriptions-box',
   'components/subscription-item',
   'components/faq-box',
@@ -164,7 +164,8 @@ $utilities: map-get-multiple(
   'components/scores-box',
   'components/questions-scores-box',
   'components/referal-box',
-  'components/referal-table';
+  'components/referal-table',
+  'components/payment-process-box';
 
 // 6. Page-specific styles
 @import

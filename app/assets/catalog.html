@@ -227,8 +227,8 @@
                         <div class="template__grid">
                             <section class="text-section template__grid-text">
                                 <div class="text-section__wrapper">
-                                    <span class="text-section__note">инструкция</span>
                                     <div class="text-section__content text-section__wrapper-item">
+                                        <span class="text-section__note">инструкция</span>
                                         <h2 class="text-section__content-title">Как работать в нашем сервисе</h2>
                                         <div class="text-section__content-text">
                                             <p>This is the Google for doctors! Most medical schools give students access to UptoDate (I believe the subscription for it is really pricey!). So, check with your school before you purchase it! It’s the perfect tool to read up on your patients’ conditions. I like to use it to review the diagnosis criteria, pathophysiology, treatment, and management for diseases. I highly highly recommend this app!</p>
@@ -270,7 +270,7 @@
                                                     Поделиться
                                                     <svg class="btn__icon" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip02)" fill="#828282"><path d="M20.38 3.667a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 7.333a3.67 3.67 0 01-3.667-3.666A3.67 3.67 0 0117.401 0a3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 7.333zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291A2.294 2.294 0 0017.4 1.375zM20.38 18.334a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M17.401 22a3.67 3.67 0 01-3.667-3.666 3.67 3.67 0 013.667-3.667 3.67 3.67 0 013.667 3.667A3.67 3.67 0 0117.4 22zm0-5.958a2.294 2.294 0 00-2.292 2.292 2.294 2.294 0 002.292 2.291 2.294 2.294 0 002.292-2.291 2.294 2.294 0 00-2.292-2.292zM7.548 11a2.98 2.98 0 11-5.958 0 2.98 2.98 0 015.958 0z"/><path d="M4.569 14.666A3.67 3.67 0 01.902 11 3.67 3.67 0 014.57 7.333 3.67 3.67 0 018.236 11a3.67 3.67 0 01-3.667 3.666zm0-5.958A2.294 2.294 0 002.277 11 2.294 2.294 0 004.57 13.29 2.294 2.294 0 006.86 11a2.294 2.294 0 00-2.292-2.292z"/><path d="M6.734 10.56a.915.915 0 01-.455-1.714l8.506-4.849a.915.915 0 011.25.343c.25.439.097 1-.342 1.25l-8.506 4.85a.911.911 0 01-.453.12zM15.238 18.123a.911.911 0 01-.453-.12l-8.506-4.85a.918.918 0 01.908-1.593l8.506 4.85a.918.918 0 01-.455 1.713z"/></g><defs><clipPath id="clip02"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
                                                 </button>
-                                                <a href="#" class="exercise-grid__link">Подробнее</a>
+                                                <a href="#payment-modal-1" rel="modal:open" class="exercise-grid__link">Подробнее</a>
                                             </footer>
                                         </div>
                                     </div>
@@ -476,6 +476,168 @@
             <img class="success-modal__icon" src="img/modal-success.svg" alt="alt">
             <span class="success-modal__title">Ссылка для просмотра успешно отправлена</span>
             <a href="#close" rel="modal:close" class="btn btn_size-s btn_default success-modal__btn">Закрыть</a>
+        </div>
+    </div>
+    <div id="payment-modal-1" class="modal payment-modal">
+        <div class="modal__grid">
+            <header class="modal__header payment-modal__header">
+                <span class="modal__title modal__title_align-center payment-modal__title">Оформить подписку</span>
+            </header>
+            <div class="modal__content">
+                <div class="auth-box">
+                    <div class="auth-box__grid">
+                        <form class="form auth-form auth-box__form payment-modal__form">
+                            <div class="payment-process-box payment-modal__process-box">
+                                <ul class="list payment-process-box__wrapper">
+                                    <li class="payment-process-box__item">
+                                        <span class="payment-process-box__title">Подписка 6 месяцев</span>
+                                        <span class="payment-process-box__price">2550 р</span>
+                                    </li>
+                                    <li class="payment-process-box__item">
+                                        <span class="payment-process-box__scores">Списать баллы</span>
+                                        <span class="payment-process-box__scores-value">
+                                            <input type="text" name="scores" value="0">
+                                        </span>
+                                    </li>
+                                    <li class="payment-process-box__item">
+                                        <span class="payment-process-box__total">К оплате</span>
+                                        <span class="payment-process-box__total-value">2550 р</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form__container form__container_width-full">
+                                <label class="form__label form__label_light">Введите ваш номер телефона</label>
+                                <div class="form__input">
+                                    <input type="tel" value="+375295939455" name="tel">
+                                </div>
+                            </div>
+                            <label class="checkbox-item form__privacy">
+                                <input type="checkbox" name="privacy" class="checkbox-item__input">
+                                <span class="checkbox-item__name">Согласен с <a href="#">пользовательским соглашением</a></span>
+                            </label>
+                            <footer class="form__footer">
+                                <!-- Заменить верстку кнопок. Только для показа процесса -->
+                                <button type="button" data-modal="#payment-modal-2" class="btn btn_size-s btn_blue form__btn">Отправить смс-код</button>
+                                <!-- Заменить верстку кнопок. Только для показа процесса -->
+                                <!-- <button type="submit" class="btn btn_size-s btn_blue form__btn">Отправить смс-код</button> -->
+                            </footer>
+                        </form>
+                    </div>
+                    <footer class="auth-box__footer">
+                        <div class="auth-box__text">
+                            <ul>
+                                <li>Для оплаты мы используем ваш номер телефона. </li>
+                                <li>Также на этот номер автоматически регистрируется личный кабинет, если он не существует.</li>
+                                <li>Вход в личный кабинет осуществляется по коду, который мы отправляем через смс.</li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="payment-modal-2" class="modal payment-modal">
+        <div class="modal__grid">
+            <header class="modal__header payment-modal__header">
+                <span class="modal__title modal__title_align-center payment-modal__title">Оформить подписку</span>
+            </header>
+            <div class="modal__content">
+                <div class="auth-box">
+                    <div class="auth-box__grid">
+                        <form class="form auth-form auth-box__form payment-modal__form">
+                            <div class="payment-process-box payment-modal__process-box">
+                                <ul class="list payment-process-box__wrapper">
+                                    <li class="payment-process-box__item">
+                                        <span class="payment-process-box__title">Подписка 6 месяцев</span>
+                                        <span class="payment-process-box__price">2550 р</span>
+                                    </li>
+                                    <li class="payment-process-box__item">
+                                        <span class="payment-process-box__scores">Списать баллы</span>
+                                        <span class="payment-process-box__scores-value">
+                                            <input type="text" name="scores" value="0">
+                                        </span>
+                                    </li>
+                                    <li class="payment-process-box__item">
+                                        <span class="payment-process-box__total">К оплате</span>
+                                        <span class="payment-process-box__total-value">2550 р</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form__container form__container_width-full">
+                                <label class="form__label form__label_light">Введите код из смс</label>
+                                <div class="form__input">
+                                    <input type="text" value="55767" name="code">
+                                </div>
+                            </div>
+                            <label class="checkbox-item form__privacy">
+                                <input type="checkbox" name="privacy" class="checkbox-item__input">
+                                <span class="checkbox-item__name">Согласен с <a href="#">пользовательским соглашением</a></span>
+                            </label>
+                            <footer class="form__footer">
+                                <!-- Заменить верстку кнопок. Только для показа процесса -->
+                                <button type="button" data-modal="#payment-modal-3" class="btn btn_size-s btn_blue form__btn">Подтвердить  смс-код</button>
+                                <!-- Заменить верстку кнопок. Только для показа процесса -->
+                                <!-- <button type="submit" class="btn btn_size-s btn_blue form__btn">Отправить смс-код</button> -->
+                            </footer>
+                        </form>
+                    </div>
+                    <footer class="auth-box__footer">
+                        <div class="auth-box__text">
+                            <ul>
+                                <li>Для оплаты мы используем ваш номер телефона. </li>
+                                <li>Также на этот номер автоматически регистрируется личный кабинет, если он не существует.</li>
+                                <li>Вход в личный кабинет осуществляется по коду, который мы отправляем через смс.</li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="payment-modal-3" class="modal payment-modal">
+        <div class="modal__grid">
+            <header class="modal__header payment-modal__header">
+                <span class="modal__title modal__title_align-center payment-modal__title">Оформить подписку</span>
+            </header>
+            <div class="modal__content">
+                <div class="auth-box">
+                    <div class="auth-box__grid">
+                        <form class="form auth-form auth-box__form payment-modal__form">
+                            <div class="payment-process-box payment-modal__process-box">
+                                <ul class="list payment-process-box__wrapper">
+                                    <li class="payment-process-box__item">
+                                        <span class="payment-process-box__title">Подписка 6 месяцев</span>
+                                        <span class="payment-process-box__price">2550 р</span>
+                                    </li>
+                                    <li class="payment-process-box__item">
+                                        <span class="payment-process-box__scores">Списать баллы</span>
+                                        <span class="payment-process-box__scores-value">
+                                            <input type="text" name="scores" value="0">
+                                        </span>
+                                    </li>
+                                    <li class="payment-process-box__item">
+                                        <span class="payment-process-box__total">К оплате</span>
+                                        <span class="payment-process-box__total-value">2550 р</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="auth-box__note">Вход в личный кабинет выполнен, можно перейти к оплате</span>
+                            <footer class="form__footer">
+                                <button type="submit" class="btn btn_size-s btn_blue form__btn">Оплатить</button>
+                            </footer>
+                        </form>
+                    </div>
+                    <footer class="auth-box__footer">
+                        <div class="auth-box__text">
+                            <ul>
+                                <li>Для оплаты мы используем ваш номер телефона. </li>
+                                <li>Также на этот номер автоматически регистрируется личный кабинет, если он не существует.</li>
+                                <li>Вход в личный кабинет осуществляется по коду, который мы отправляем через смс.</li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
         </div>
     </div>
     <!-- End modal -->

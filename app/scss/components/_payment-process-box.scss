@@ -1,0 +1,72 @@
+.payment-process-box {
+    &__item {
+        @include flex(row, center);
+        padding: 0 25px;
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+        &:last-child {
+            background: rgba($primary, .1);
+            box-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
+            border-radius: 12px;
+            padding: 20px 25px;
+        }
+        & > {
+            & span {
+                &:first-child {
+                    margin-right: 50px;
+                    text-align: right;
+                    flex: 1 1 auto;
+                }
+                &:last-child {
+                    min-width: 75px;
+                    margin-left: auto;
+                    flex-shrink: 0;
+                }
+            } 
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $gray;
+    }
+    &__price {
+        font-size: 2.4rem;
+        line-height: 1.35;
+        color: $gray-100;
+        font-weight: 600;
+    }
+    &__scores {
+        font-size: 1.4rem;
+        line-height: 1.35;
+        color: $gray-100;
+        &-value {
+            & input {
+                width: 75px;
+                height: 40px;
+                border: 2px solid $gray;
+                border-radius: 12px;
+                font-weight: 600;
+                color: $gray;
+                text-align: center;
+                padding: 0 15px;
+                &:focus {
+                    border-color: $primary;
+                    color: $primary;
+                }
+            }
+        }
+    }
+    &__total {
+        font-size: 1.4rem;
+        line-height: 1.35;
+        color: $gray-100;
+        &-value {
+            font-size: 2.4rem;
+            line-height: 1.35;
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+}

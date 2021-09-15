@@ -7,7 +7,7 @@
     max-width: 570px;
     & a.close-modal {
         background: icon('close.svg') no-repeat 50% / 20px auto;
-        right: -20px;
+        right: 0;
         top: auto;
         bottom: calc(100% + 50px);
         transition: transform .25s ease;
@@ -111,5 +111,21 @@
     &__form {
         max-width: 325px;
         margin: 0 auto;
+    }
+}
+.payment-modal {
+    max-width: 769px;
+    padding: 50px;
+    padding-top: 60px;
+    &__header {
+        padding-bottom: 0;
+        margin-bottom: 40px;
+        border-bottom: none;
+    }
+    &__process-box {
+        margin-bottom: 25px;
+    }
+    &__form {
+        max-width: 400px;
     }
 }
