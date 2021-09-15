@@ -125,7 +125,9 @@ $utilities: map-get-multiple(
   'layout/subscription-personal-data',
   'layout/subscription-inner-template',
   'layout/inner-privacy-template',
-  'layout/result-template';
+  'layout/result-template',
+  'layout/bonus-template',
+  'layout/bonus-box';
 
 // 5. Components
 @import
@@ -156,7 +158,13 @@ $utilities: map-get-multiple(
   'components/subscriptions-box',
   'components/subscription-item',
   'components/faq-box',
-  'components/b-catalog-box';
+  'components/b-catalog-box',
+  'components/b-toggle',
+  'components/bonus-agreement-box',
+  'components/scores-box',
+  'components/questions-scores-box',
+  'components/referal-box',
+  'components/referal-table';
 
 // 6. Page-specific styles
 @import

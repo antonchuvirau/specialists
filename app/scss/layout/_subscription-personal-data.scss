@@ -16,10 +16,17 @@
             text-transform: uppercase;
             font-weight: 600;
             color: $gray;
+            &_size {
+                &-m {
+                    width: 185px;
+                    flex: 0 0 185px;
+                }
+            }
         }
         &-value {
+            @include flex(row, center);
             position: relative;
-            & span {
+            & > span {
                 display: block;
                 width: 235px;
                 overflow: hidden;
@@ -99,6 +106,22 @@
         }
         &:hover {
             opacity: .85;
+        }
+    }
+    &__status {
+        @include flex(row, center);
+        &-item {
+            font-weight: 600;
+            line-height: 1.5;
+            margin: 0 15px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &_is {
+                &-light {
+                    color: $gray-50;
+                }
+            }
         }
     }
 }

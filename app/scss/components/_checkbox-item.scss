@@ -43,4 +43,43 @@
             border: 1px solid $gray-50;
         }
     }
+    &_size {
+        &-m {
+            & .checkbox-item {
+                &__name {
+                    font-size: 1.6rem;
+                    &::before {
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+    &_is {
+        &-light {
+            & .checkbox-item {
+                &__name {
+                    color: $white;
+                    &::before {
+                        border-color: $white;
+                    }
+                    & a {
+                        color: $white;
+                    }
+                }
+                &__input {
+                    &:checked + {
+                        & .checkbox-item {
+                            &__name {
+                                &::before {
+                                    border-color: $white;
+                                    background: $white icon('check-dark.svg') no-repeat 50% / 12px auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
 }

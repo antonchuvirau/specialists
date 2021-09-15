@@ -9,9 +9,11 @@
     border-radius: $button-border-radius;
     text-align: center;
     &__icon {
+        position: relative;
         display: inline-block;
         vertical-align: middle;
         margin-left: 10px;
+        top: -2px;
     }
     &_size {
         &-s {
@@ -25,6 +27,13 @@
         border-color: $light;
         background: $white;
         color: $primary;
+        & .btn {
+            &__icon {
+                & path {
+                    fill: $primary
+                }
+            }
+        }
     }
     &_default {
         background: transparent;
@@ -34,6 +43,16 @@
             background: $primary;
             color: $white;
             border-color: $primary;
+        }
+    }
+    &_white {
+        background: $white;
+        border-color: $white;
+        color: $primary;
+        &:hover {
+            background: $white;
+            border-color: $light;
+            color: $primary;
         }
     }
     &_blue {

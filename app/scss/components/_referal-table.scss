@@ -1,0 +1,127 @@
+.referal-table {
+    &__footer {
+        @include flex(row, center, center);
+        margin-top: 35px;
+    }
+    &__box {
+        &-header {
+            & th {
+                padding: 10px 15px;
+                font-size: 1.4rem;
+                color: $white;
+                font-weight: 600;
+                background: $primary;
+                text-align: center;
+                &:first-child {
+                    text-align: left;
+                    padding-left: 40px;
+                }
+            }
+        }
+        &-item {
+            & td {
+                padding: 15px;
+                background: rgba($primary, .03);
+                text-align: center;
+                &:first-child {
+                    padding-left: 40px;
+                    text-align: left;
+                }
+            }
+        }
+        &-name {
+            line-height: 1.5;
+            color: $gray-100;
+        }
+        &-code {
+            color: $black;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        &-date {
+            line-height: 1.5;
+            color: $gray-100;
+        }
+        &-scores {
+            color: $black;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        &-btn {
+            position: relative;
+            color: $primary;
+            line-height: 1.5;
+            padding-right: 20px;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                right: 0;
+                top: 50%;
+                margin-top: -4px;
+                background: icon('arrow-down.svg') no-repeat 50% / 9px auto;
+                pointer-events: none;
+                transition: transform .25 ease;
+                z-index: 1;
+            }
+            &_is {
+                &-active {
+                    &::after {
+                        transform: scale(-1);
+                    }
+                }
+            }
+        }
+    }
+    &__sub-box {
+        display: none;
+        &-header {
+            & th {
+                padding: 10px 15px;
+                padding-top: 15px;
+                text-align: center;
+                color: $gray-50;
+                font-size: 1.4rem;
+                line-height: 1.5;
+                &:first-child {
+                    padding-left: 40px;
+                    text-align: left;
+                }
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+        &-item {
+            & td {
+                padding: 12px 15px;
+                text-align: center;
+                font-size: 1.4rem;
+                color: $gray-100;
+                &:first-child {
+                    text-align: left;
+                    padding-left: 40px;
+                }
+                &:last-child {
+                    text-align: right;
+                }
+                &:nth-child(even) {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    color: $black;
+                }
+            }
+            &:last-child {
+                & td {
+                    padding-bottom: 32px;
+                }
+            }
+        }
+        &_is {
+            &-opened {
+                display: table-row;
+            }
+        }
+    }
+}

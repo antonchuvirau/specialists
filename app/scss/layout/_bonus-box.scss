@@ -1,0 +1,82 @@
+.bonus-box {
+    &__wrapper {
+        padding: 50px 40px;
+        padding-bottom: 70px;
+        background: $white;
+        box-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
+        border-radius: 30px;
+    }
+    &__link {
+        color: $primary;
+        &:hover {
+            opacity: .85;
+        }
+    }
+    &__header {
+        position: relative;
+        @include flex(column);
+        padding-bottom: 35px;
+        &-title {
+            font-size: 3.6rem;
+            line-height: 1.35;
+            color: $black;
+            font-weight: 600;
+        }
+        &-link {
+            position: absolute;
+            top: 15px;
+            right: 0;
+            z-index: 1;
+        }
+    }
+    &__quantity {
+        @include flex(row, center);
+        margin-top: 25px;
+        color: $gray-50;
+        &-value {
+            color: $gray;
+            margin-left: 15px;
+            & b {
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: $black;
+            }
+        }
+    }
+    &__section {
+        padding: 30px 0;
+        border-top: 1px solid rgba($primary, .2);
+        &-header {
+            @include flex(row, center);
+            position: relative;
+            &-link {
+                margin-left: auto;
+            }
+        }
+        &-title {
+            text-transform: uppercase;
+            color: $gray;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+        &-note {
+            @include flex(row, center);
+            color: $gray-50;
+            margin-top: 15px;
+            &-value {
+                color: $gray-100;
+                margin-left: 15px;
+                font-weight: 600;
+            }
+        }
+        &-scores {
+            margin-top: 35px;
+        }
+        &-referal {
+            margin-left: 25px;
+        }
+    }
+    &__referal-box {
+        margin-top: 35px;
+    }
+}

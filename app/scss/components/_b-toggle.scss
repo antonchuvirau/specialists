@@ -1,0 +1,67 @@
+.b-toggle {
+    display: block;
+    position: relative;
+    width: 64px;
+    height: 24px;
+    cursor: pointer;
+    &__layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background: $gray-50;
+        transition: background .45s ease-in-out;
+        &::after {
+            content: 'Выкл';
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+            font-size: 1.2rem;
+            color: $white;
+            font-weight: 600;
+            transition: transform .45s ease-in-out;
+            z-index: 1;
+        }
+    }
+    &__handler {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $white;
+        border: 1px solid $gray-50;
+        left: 0;
+        top: 50%;
+        margin-top: -12px;
+        transform: translate3d(0, 0, 0);
+        transition: transform .45s ease-in-out;
+        z-index: 1;
+    }
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        &:checked + .b-toggle {
+            &__layer {
+                background: $primary;
+                &::after {
+                    content: 'Вкл';
+                    color: $white;
+                    transform: translate3d(-25px, -50%, 0);
+                }
+                & + .b-toggle {
+                    &__handler {
+                        transform: translate3d(40px, 0, 0);
+                        border-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

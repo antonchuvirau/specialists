@@ -1,0 +1,37 @@
+.questions-scores-box {
+    &__title {
+        margin-top: 25px;
+        display: block;
+        color: $gray-100;
+        line-height: 1.5;
+    }
+    &__desc {
+        margin-top: 10px;
+        @include flex(row, center);
+        &-item {
+            @include flex(row, center);
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+        &-name {
+            color: $gray-50;
+        }
+        &-value {
+            color: $gray-100;
+            font-weight: 600;
+            margin-left: 15px;
+        }
+    }
+    &__footer {
+        @include flex(row, center);
+        margin-top: 15px;
+    }
+    &__link {
+        margin-left: 45px;
+        color: $primary;
+        &:hover {
+            opacity: .85;
+        }
+    }
+}

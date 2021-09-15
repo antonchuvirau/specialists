@@ -1,0 +1,29 @@
+.referal-box {
+    &__wrapper {
+        @include flex(row, center);
+    }
+    &__input {
+        width: 360px;
+        flex: 0 0 360px;
+        font-size: 1.4rem;
+        color: $gray-100;
+        height: 40px;
+        background: $white;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        box-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
+    }
+    &__btn {
+        @include flex(row, center);
+        line-height: 1.5;
+        color: $primary;
+        margin-left: 20px;
+        & svg {
+            flex-shrink: 0;
+            margin-right: 15px;
+        }
+        &:hover {
+            opacity: .85;
+        }
+    }
+}

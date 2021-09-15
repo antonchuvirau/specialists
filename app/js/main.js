@@ -55,6 +55,17 @@ function onDocumentClickHandler(evt) {
             }
         }
     }
+    if (target.matches(`.referal-table__box-btn`)) {
+        if (target.classList.contains(`referal-table__box-btn_is-active`)) {
+            target.classList.remove(`referal-table__box-btn_is-active`);
+            target.textContent = `Показать историю`;
+        }
+        else {
+            target.classList.add(`referal-table__box-btn_is-active`);
+            target.textContent = `Скрыть историю`;
+        }
+        target.closest(`.referal-table__box-item`).nextElementSibling.classList.toggle(`referal-table__sub-box_is-opened`);
+    }
 }
 
 document.addEventListener(`DOMContentLoaded`, () => {

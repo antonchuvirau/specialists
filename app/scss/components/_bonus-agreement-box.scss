@@ -1,0 +1,22 @@
+.bonus-agreement-box {
+    @include flex(column);
+    padding: 25px 75px;
+    padding-bottom: 45px;
+    border: 4px solid $primary;
+    box-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
+    border-radius: 30px;
+    background: $primary;
+    &__header {
+        @include flex(row, center);
+        margin-bottom: 15px;
+    }
+    &__title {
+        color: $white;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-right: 20px;
+    }
+    &__btn {
+        margin-top: 25px;
+    }
+}
