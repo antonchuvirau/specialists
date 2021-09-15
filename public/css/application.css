@@ -5490,7 +5490,7 @@ h1 {
         -ms-transform: translateY(5px);
             transform: translateY(5px);
     pointer-events: none;
-    z-index: 2; }
+    z-index: 3; }
     .b-select__wrapper_open {
       -webkit-transform: none;
           -ms-transform: none;
