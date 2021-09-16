@@ -25,14 +25,14 @@
             <div class="row align-items-center">
                 <div class="col-3 header__col">
                     <a href="#" class="logo header__logo">
-                        <img class="logo__media" src="img/logo.svg" alt="alt">
+                        <img class="logo__media" src="img/logo-dark.svg" alt="alt">
                     </a>
                 </div>
                 <div class="col-9 header__col">
                     <div class="header__wrapper">
                         <nav class="navigation header__navigation">
                             <ul class="list navigation__wrapper">
-                                <li class="navigation__item"><a href="#" class="navigation__link">Каталог</a></li>
+                                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_is-active">Каталог</a></li>
                                 <li class="navigation__item"><a href="#" class="navigation__link">Возможности</a></li>
                                 <li class="navigation__item"><a href="#" class="navigation__link">Семинары</a></li>
                                 <li class="navigation__item"><a href="#" class="navigation__link">Тарифы</a></li>
@@ -40,13 +40,41 @@
                                 <li class="navigation__item">
                                     <a href="#" class="navigation__link navigation__link_is-styled">Я пациент
                                         <svg class="navigation__link-icon" width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15.354 4.354a.5.5 0 000-.708L12.172.464a.5.5 0 10-.708.708L14.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h15v-1H0v1z" fill="#fff"/>
+                                            <path d="M15.354 4.354a.5.5 0 000-.708L12.172.464a.5.5 0 10-.708.708L14.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h15v-1H0v1z" fill="#4f4f4f"/>
                                         </svg>                                   
                                     </a>
                                 </li>
                             </ul>
                         </nav>
-                        <a class="btn header__btn" href="#">Подписка</a>
+                        <div class="account-link header__account-link">
+                            <a class="account-link__name" href="#">Моя подписка</a>
+                            <button type="button" class="account-link__value">3</button>
+                            <div class="account-notifications account-link__notifications">
+                                <div class="account-notifications__wrapper">
+                                    <a href="#" class="account-notifications__item">
+                                        <p class="account-notifications__item-text">Уведомление, которое недавно пришло в ваш личный кабинет, находится тут...</p>
+                                        <footer class="account-notifications__item-footer">
+                                            <span class="account-notifications__item-date">21/08/2020</span>
+                                            <span class="account-notifications__item-link">Читать больше</span>
+                                        </footer>
+                                    </a>
+                                    <a href="#" class="account-notifications__item">
+                                        <p class="account-notifications__item-text">Уведомление, которое недавно пришло в ваш личный кабинет, находится тут...</p>
+                                        <footer class="account-notifications__item-footer">
+                                            <span class="account-notifications__item-date">21/08/2020</span>
+                                            <span class="account-notifications__item-link">Читать больше</span>
+                                        </footer>
+                                    </a>
+                                    <a href="#" class="account-notifications__item">
+                                        <p class="account-notifications__item-text">Уведомление, которое недавно пришло в ваш личный кабинет, находится тут...</p>
+                                        <footer class="account-notifications__item-footer">
+                                            <span class="account-notifications__item-date">21/08/2020</span>
+                                            <span class="account-notifications__item-link">Читать больше</span>
+                                        </footer>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
