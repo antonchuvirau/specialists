@@ -3673,6 +3673,8 @@ h1 {
       opacity: .85; }
   .footer__btn {
     width: 100%; }
+  .footer__logo {
+    max-width: 200px; }
 
 .hero {
   border-bottom-left-radius: 80px;
