@@ -3643,6 +3643,10 @@ h1 {
 .header__account-link {
   margin-left: auto; }
 
+.header__logo {
+  display: block;
+  max-width: 150px; }
+
 .footer {
   background: #4F79FF; }
   .footer__top {
