@@ -4,6 +4,7 @@
     }
     &__logo {
         display: block;
+        max-width: 150px;
     }
     &__links {
         @include flex(row, center, flex-end);

@@ -4273,7 +4273,8 @@ h1 {
   padding: 20px 0; }
 
 .inner-header__logo {
-  display: block; }
+  display: block;
+  max-width: 150px; }
 
 .inner-header__links {
   display: -webkit-box;
