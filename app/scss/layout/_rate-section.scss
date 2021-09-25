@@ -11,3 +11,29 @@
         margin-bottom: 40px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .rate-section {
+        &__header {
+            margin-bottom: 40px;
+        }
+        &__message {
+            &:nth-child(n) {
+                margin-bottom: 0;
+            }
+        }
+        &__col {
+            margin-top: 15px;
+            &:nth-child(odd) {
+                padding-right: 5px;
+            }
+            &:nth-child(even) {
+                padding-left: 5px;
+            }
+        }
+        &__grid {
+            margin-bottom: 15px;
+        }
+    }
+}

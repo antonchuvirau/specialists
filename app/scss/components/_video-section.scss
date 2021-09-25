@@ -19,3 +19,15 @@
         z-index: 1;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .video-section {
+        border-width: 16px;
+        &::after {
+            width: 92px;
+            height: 57px;
+            background-size: 92px;
+        }
+    }
+}

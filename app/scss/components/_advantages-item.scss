@@ -30,3 +30,15 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .advantages-item {
+        &__wrapper {
+            padding: 30px;
+        }
+        &__media {
+            height: 180px;
+        }
+    }
+}

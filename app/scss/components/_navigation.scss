@@ -63,3 +63,14 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .navigation {
+        &__item {
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+        }
+    }
+}

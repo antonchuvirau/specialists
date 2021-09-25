@@ -66,3 +66,25 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .message {
+        flex-direction: column;
+        padding: 30px;
+        padding-bottom: 45px;
+        &__col {
+            width: 100%;
+            &:nth-child(n) {
+                padding-right: 0;
+                padding-left: 0;
+            }
+            &:not(:last-child) {
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-right: none;
+                border-bottom: 1px solid rgba($primary, .1);
+            }
+        }
+    }
+}

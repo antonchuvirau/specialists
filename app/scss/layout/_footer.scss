@@ -35,3 +35,30 @@
         max-width: 200px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .footer {
+        &__top {
+            padding: 80px 0;
+            padding-bottom: 65px;
+            &-col {
+                &:first-child {
+                    margin-bottom: 65px;
+                }
+            }
+        }
+        &__bottom {
+            padding: 45px 0;
+            padding-bottom: 50px;
+            &-col {
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &__logo {
+            margin: 0 auto;
+        }
+    }
+}

@@ -29,3 +29,22 @@
         margin-bottom: 30px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .about-section {
+        padding: 65px 0;
+        background-size: contain;
+        &__header {
+            margin-bottom: 40px;
+        }
+        &__col {
+            &:nth-child(n) {
+                margin-bottom: 0;
+            }
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

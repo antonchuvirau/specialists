@@ -37,3 +37,24 @@
         max-width: 150px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .header {
+        &_is {
+            &-sticky {
+                top: 35px;
+            }
+        }
+        &__navigation {
+            margin-top: 20px;
+        }
+        &__wrapper {
+            &_align {
+                &-center {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
