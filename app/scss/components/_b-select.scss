@@ -61,7 +61,7 @@ $b-select-shadow: 0 0 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07)
         transition: transform .25s ease, opacity .25s ease;
         transform: translateY(5px);
         pointer-events: none;
-        z-index: 3;
+        z-index: 4;
         &_open {
             transform: none;
             opacity: 1;

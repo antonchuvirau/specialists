@@ -1,2 +1,13 @@
 .exercises-list {
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .exercises-list {
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

@@ -26,7 +26,7 @@
         border-radius: 20px;
         padding: .8em 1.25em;
         background: $gray;
-        @each $level in start, middle, hight {
+        @each $level in start, middle, high {
             &_#{$level} {
                 background: map-get($levels, #{$level});
             }
@@ -55,7 +55,7 @@
         &-media {
             position: relative;
             width: 100%;
-            height: 9.8vw;
+            height: 190px;
             border-radius: 10px;
             background-size: cover;
             background-position: 50%;
@@ -110,6 +110,51 @@
         &:hover {
             color: $gray;
             border-color: $gray-50;
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .exercise-grid {
+        &__list {
+            @include flex();
+            width: 100%;
+            overflow-x: auto;
+            padding-bottom: 25px;
+        }
+        &__item {
+            width: 320px;
+            padding-bottom: 0;
+            flex-shrink: 0;
+            &:not(:last-child) {
+                margin-right: 10px;
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+        }
+        &__footer {
+            margin-top: 25px;
+        }
+        &__link {
+            font-weight: 400;
+            color: $primary;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .exercise-grid {
+        &__list {
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+        &__item {
+            width: 100%;
+            &:not(:last-child) {
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgba($primary, .1);
+                margin-bottom: 30px;
+            }
         }
     }
 }

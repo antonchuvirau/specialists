@@ -89,3 +89,35 @@
         margin-top: 35px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .form {
+        &__row {
+            flex-direction: column;
+        }
+        &__container {
+            width: 100%;
+            flex: 1 1 auto;
+            max-width: none;
+            &:not(:last-child) {
+                margin: 0;
+                margin-bottom: 25px;
+            }
+        }
+        &__section {
+            &-radio {
+                width: calc((100% - 45px) / 2);
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+                &:nth-child(odd) {
+                    margin-right: 45px;
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
