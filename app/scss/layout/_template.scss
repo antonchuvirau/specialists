@@ -61,3 +61,21 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .template {
+        &__wrapper {
+            padding-top: 180px;
+            padding-bottom: 100px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .template {
+        &__wrapper {
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+    }
+}

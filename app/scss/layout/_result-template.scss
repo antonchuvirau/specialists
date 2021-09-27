@@ -33,3 +33,34 @@
         margin-top: 80px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .result-template {
+        &__grid {
+            &-header {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__rate-section {
+            margin-top: 60px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .result-template {
+        &__grid {
+            &-header {
+                padding-bottom: 25px;
+            }
+            &-title {
+                margin-left: 0;
+                margin-top: 40px;
+            }
+        }
+        &__rate-section {
+            margin-top: 30px;
+        }
+    }
+}
