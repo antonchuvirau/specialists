@@ -58,3 +58,43 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .header {
+        &__wrapper {
+            @include flex(column, center, flex-start);
+            position: fixed;
+            width: 100%;
+            height: calc(100vh - 100px);
+            left: 0;
+            top: 100px;
+            padding: 45px calc((100% - 510px) / 2);
+            transform: translate3d(-150%, 0, 0);
+            transition: transform .25s ease-in;
+            background: $white;
+            overflow-y: auto;
+            z-index: 9999;
+            &_is-open {
+                transform: none;
+            }
+        }
+        &__logo {
+            max-width: 120px;
+        }
+        &_is-sticky {
+            top: 25px;
+        }
+        &__btn {
+            margin-left: 0;
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+            &:not(.btn_default) {
+                background: $primary;
+            }
+        }
+        &__navigation {
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+    }
+}

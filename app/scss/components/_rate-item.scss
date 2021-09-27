@@ -103,3 +103,35 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .rate-item {
+        &__desc {
+            display: none;
+        }
+        &__options {
+            flex-direction: column;
+        }
+        &__wrapper {
+            padding: 25px 15px;
+        }
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__btn {
+            margin-left: 0;
+            width: 100%;
+        }
+        &__price {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px;
+            &-sale {
+                font-size: 1.6rem;
+                width: 55px;
+                height: 25px;
+            }
+        }
+    }
+}

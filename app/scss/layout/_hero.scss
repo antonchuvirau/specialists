@@ -93,3 +93,25 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .hero {
+        &__wrapper {
+            padding-top: 100px;
+        }
+        &__breadcrumbs {
+            border-top: none;
+            padding-top: 0;
+            margin-bottom: 35px;
+        }
+        &__title {
+            font-size: 3.2rem;
+            margin-bottom: 25px;
+        }
+        &__video {
+            width: calc(100% - 30px);
+            left: 15px;
+            height: 51.39vw;
+            transform: none;
+        }
+    }
+}

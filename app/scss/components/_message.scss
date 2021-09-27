@@ -88,3 +88,33 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .message {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        &__col {
+            &:not(:last-child) {
+                padding: 25px 15px;
+                margin: 0;
+                border: 3px solid $primary;
+                border-radius: 30px;
+                margin-top: 40px;
+                &.message {
+                    &__content {
+                        &_is {
+                            &-custom {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__btn {
+            position: relative;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+    }
+}

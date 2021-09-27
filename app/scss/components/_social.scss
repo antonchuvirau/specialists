@@ -33,3 +33,15 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .social {
+        &__title {
+            text-align: center;
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+}

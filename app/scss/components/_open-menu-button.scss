@@ -1,0 +1,11 @@
+.open-menu-button {
+    @include flex(row, center, flex-end);
+    &__el {
+        @include flex(row, center, center);
+        width: 30px;
+        height: 30px;
+        & svg {
+            pointer-events: none;
+        }
+    }
+}

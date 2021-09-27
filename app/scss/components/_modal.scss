@@ -129,3 +129,33 @@
         max-width: 400px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .video-modal {
+        border-width: 12px;
+        border-radius: 25px;
+        & iframe {
+            border-radius: 25px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .modal {
+        & iframe {
+            height: 51.39vw;
+        }
+        & a {
+            &.close-modal {
+                bottom: calc(100% + 20px);
+            }
+        }
+    }
+    .video-modal {
+        border-width: 6px;
+        border-radius: 10px;
+        & iframe {
+            border-radius: 10px;
+        }
+    }
+}

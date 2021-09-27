@@ -74,3 +74,37 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .navigation {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__link {
+            display: block;
+            font-size: 1.8rem;
+            color: $gray-100;
+            text-align: center;
+            &-icon {
+                & path {
+                    fill: $gray-100;
+                }
+            }
+            &_is-styled {
+                &::after {
+                    background: $gray-100;
+                    left: 22px;
+                    width: calc(100% - 70px);
+                }
+            }
+        }
+        &__item {
+            width: 100%;
+            &:nth-child(n) {
+                margin: 0;
+            }
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

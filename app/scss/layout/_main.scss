@@ -39,3 +39,20 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .main {
+        &__wrapper {
+            padding-top: 135px;
+            padding-bottom: 60px;
+        }
+        &__rate {
+            margin-bottom: 60px;
+        }
+        &__about {
+            margin-bottom: 60px;
+        }
+        &__advantages {
+            margin-bottom: 60px;
+        }
+    }
+}

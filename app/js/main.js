@@ -5,6 +5,15 @@ function onAccountNotificationsOpenButtonClickHandler(evt) {
     target.nextElementSibling.classList.toggle(`account-link__notifications_is-opened`);
 }
 
+function onOpenMenuButtonElementClickHandler() {
+    const navigationElement = document.querySelector(`.header__navigation-wrapper`);
+    const documentElement = document.documentElement;
+    if (navigationElement && documentElement) {
+        navigationElement.classList.toggle(`header__wrapper_is-open`);
+        documentElement.classList.toggle(`is-locked`);
+    }
+}
+
 function onDocumentClickHandler(evt) {
     const target = evt.target;
 
@@ -71,9 +80,13 @@ function onDocumentClickHandler(evt) {
 document.addEventListener(`DOMContentLoaded`, () => {
     // VARIABLES
     const accountNotificationsOpenButton = document.querySelector(`.account-link__value`);
+    const openMenuButtonElement = document.querySelector(`.open-menu-button__el`);
     // EVENTS
     if (accountNotificationsOpenButton) {
         accountNotificationsOpenButton.addEventListener(`click`, onAccountNotificationsOpenButtonClickHandler);
+    }
+    if (openMenuButtonElement) {
+        openMenuButtonElement.addEventListener(`click`, onOpenMenuButtonElementClickHandler);
     }
 });
 

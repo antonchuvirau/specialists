@@ -27,3 +27,20 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .app {
+        &__title {
+            text-align: center;
+        }
+        &__link {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+}

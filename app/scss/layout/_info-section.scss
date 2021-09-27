@@ -63,3 +63,23 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .info-section {
+        &__media {
+            & img {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                top: auto;
+                width: auto;
+                transform: none;
+                max-width: 100%;
+            }
+        }
+        &__col {
+            &:not(:first-child) {
+                margin-top: 15px;
+            }
+        }
+    }
+}
