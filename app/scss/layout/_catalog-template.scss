@@ -14,3 +14,14 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .catalog-template {
+        &__search {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
