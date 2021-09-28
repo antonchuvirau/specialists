@@ -28,3 +28,20 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .expire-access-box {
+        &__text {
+            text-align: left;
+        }
+        &__price {
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+        &__options {
+            justify-content: flex-start;
+            margin-top: 15px;
+        }
+    }
+}

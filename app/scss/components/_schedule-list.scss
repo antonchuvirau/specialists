@@ -70,3 +70,37 @@ $schedule-list-media-br: 32px;
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .schedule-list {
+        &__wrapper {
+            padding: 45px 30px;
+        }
+        &__item {
+            &-title {
+                text-align: left;
+            }
+            &-grid {
+                flex-direction: column;
+            }
+            &-text {
+                padding-left: 0;
+                margin-top: 30px;
+            }
+            &-media {
+                width: 100%;
+                max-width: 440px;
+                height: 245px;
+                flex: 1 1 auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .schedule-list {
+        &__wrapper {
+            padding: 30px 15px;
+        }
+    }
+}

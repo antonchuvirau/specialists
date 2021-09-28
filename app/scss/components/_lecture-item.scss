@@ -75,3 +75,29 @@ $lecturer-media-br: 32px;
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .lecture-item {
+        &__grid {
+            flex-direction: column;
+            padding: 30px;
+        }
+        &__media {
+            flex: 1 1 auto;
+            width: 100%;
+            max-width: 440px;
+            height: 245px;
+        }
+        &__content {
+            padding-right: 0;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .lecture-item {
+        &__grid {
+            padding: 30px 15px;
+        }
+    }
+}

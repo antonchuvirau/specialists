@@ -87,3 +87,48 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .subscription-item {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__col {
+            &:first-child {
+                width: 100%;
+                flex: 1 1 auto;
+                margin-bottom: 15px;
+            }
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
+        &__date {
+            text-align: right;
+        }
+        &__price {
+            @include flex(row, center, flex-end);
+            &-value {
+                margin: 0;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .subscription-item {
+        &__desc {
+            flex-direction: column;
+            align-items: flex-start;
+            &-item {
+                &:nth-child(n) {
+                    margin: 0;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

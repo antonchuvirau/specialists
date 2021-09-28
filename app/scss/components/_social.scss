@@ -35,10 +35,31 @@
 }
 
 // MEDIA
+@media screen and (max-width: 1229px) {
+    .social {
+        &__title {
+            &.inner-footer {
+                &__social {
+                    &-title {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 767px) {
     .social {
         &__title {
             text-align: center;
+            &.inner-footer {
+                &__social {
+                    &-title {
+                        margin-bottom: 20px;
+                        margin-right: 0;
+                    }
+                }
+            }
         }
         &__wrapper {
             justify-content: center;

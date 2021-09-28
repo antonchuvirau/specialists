@@ -8,3 +8,23 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .inner-footer {
+        &__social {
+            align-items: center;
+            justify-content: center;
+            &-title {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .inner-footer {
+        &__social {
+            flex-direction: column;
+        }
+    }
+}

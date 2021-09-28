@@ -34,3 +34,46 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .inner-header {
+        &__links {
+            &-item {
+                &_account {
+                    &.inner-header__links-item {
+                        width: 30px;
+                        height: 30px;
+                        font-size: 0;
+                        border: none;
+                        background: icon('account.svg') no-repeat 50% / 30px auto;
+                        &:hover {
+                            background: icon('account.svg') no-repeat 50% / 30px auto;
+                        }
+                    }
+                }
+                &_border {
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .inner-header {
+        &__wrapper {
+            position: relative;
+        }
+        &__links {
+            &-item {
+                &_program {
+                    position: absolute;
+                    left: 15px;
+                    bottom: -15px;
+                }
+            }
+        }
+    }
+}

@@ -176,6 +176,27 @@
             }
         }
     }
+    .inner-exercise-template {
+        & .exercise-box {
+            &__header {
+                padding-bottom: 40px;
+            }
+            &__expire-time {
+                left: 0;
+                bottom: 0;
+                top: auto;
+                right: auto;
+            }
+            &__expire-access {
+                position: relative;
+                right: auto;
+                bottom: auto;
+            }
+            &__meta {
+                padding-bottom: 50px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 767px) {
     .exercise-box {

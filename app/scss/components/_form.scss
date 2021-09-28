@@ -125,5 +125,10 @@
         &__privacy {
             margin-top: 5px;
         }
+        &__input {
+            & input {
+                height: 55px;
+            }
+        }
     }
 }

@@ -7,3 +7,34 @@
         margin-bottom: 55px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .inner-template {
+        &__wrapper {
+            & .template {
+                &__options {
+                    &-select {
+                        flex-shrink: 1;
+                    }
+                    &-search {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .inner-template {
+        &__wrapper {
+            & .template {
+                &__options {
+                    &-search {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

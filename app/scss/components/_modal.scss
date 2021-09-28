@@ -184,4 +184,15 @@
             }
         }
     }
+    .order-modal {
+        padding: 50px 15px;
+    }
+    .payment-modal {
+        padding: 30px 15px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .modal {
+        width: 100%;
+    }
 }

@@ -24,3 +24,22 @@ $subscriptions-box-br: 32px;
         transform: translateX(-50%);
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .subscriptions-box {
+        &__btn {
+            margin-top: 40px;
+        }
+        &__wrapper {
+            padding: 30px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .subscriptions-box {
+        &__wrapper {
+            padding: 30px 15px;
+        }
+    }
+}
