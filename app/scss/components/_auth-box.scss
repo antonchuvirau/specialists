@@ -59,3 +59,34 @@
         margin-top: 50px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .auth-box {
+        &__title {
+            text-align: left;
+        }
+        &__header {
+            margin-bottom: 15px;
+        }
+        &__footer {
+            padding-top: 0;
+            margin-top: 30px;
+            border: none;
+        }
+        &__help {
+            @include flex(column, center, flex-start);
+            border-top: 1px solid rgba($primary, .1);
+            margin-top: 25px;
+            padding-top: 25px;
+            &-link {
+                margin-top: 10px;
+            }
+        }
+        &__text {
+            & ul, ol {
+                padding-left: 15px;
+            }
+        }
+    }
+}

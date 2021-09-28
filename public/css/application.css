@@ -4216,7 +4216,9 @@ h1 {
   .template__grid {
     margin-top: 30px; }
     .template__grid-exercises {
-      margin-top: 40px; } }
+      margin-top: 40px; }
+    .template__grid-box {
+      padding: 30px; } }
 
 @media screen and (max-width: 991px) {
   .template__grid-col:not(:last-child) {
@@ -4250,7 +4252,9 @@ h1 {
       .template__options-select:nth-child(n) {
         margin: 0; }
       .template__options-select:not(:last-child) {
-        margin-bottom: 15px; } }
+        margin-bottom: 15px; }
+  .template__grid-box {
+    padding: 30px 15px; } }
 
 .catalog-template {
   background: url("../img/catalog-bg.svg") no-repeat 50%/100% auto; }
@@ -4678,6 +4682,10 @@ h1 {
 
 .auth-template__grid {
   margin-top: 80px; }
+
+@media screen and (max-width: 767px) {
+  .auth-template__grid {
+    margin-top: 35px; } }
 
 .inner-header__wrapper {
   padding: 20px 0; }
@@ -6496,7 +6504,9 @@ h1 {
     .form__section-radio:nth-child(odd) {
       margin-right: 45px; }
   .form__section:not(:last-child) {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .form__footer {
+    margin-top: 25px; } }
 
 .radio-item {
   position: relative;
@@ -7016,6 +7026,39 @@ h1 {
   line-height: 1.35;
   color: #4f4f4f;
   margin-top: 50px; }
+
+@media screen and (max-width: 767px) {
+  .auth-box__title {
+    text-align: left; }
+  .auth-box__header {
+    margin-bottom: 15px; }
+  .auth-box__footer {
+    padding-top: 0;
+    margin-top: 30px;
+    border: none; }
+  .auth-box__help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    border-top: 1px solid rgba(79, 121, 255, 0.1);
+    margin-top: 25px;
+    padding-top: 25px; }
+    .auth-box__help-link {
+      margin-top: 10px; }
+  .auth-box__text ul, .auth-box__text ol {
+    padding-left: 15px; } }
 
 .modal {
   -webkit-box-shadow: 0 20px 55px 0 rgba(79, 121, 255, 0.07);

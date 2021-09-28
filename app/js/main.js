@@ -79,11 +79,13 @@ function onDocumentClickHandler(evt) {
 
 document.addEventListener(`DOMContentLoaded`, () => {
     // VARIABLES
-    const accountNotificationsOpenButton = document.querySelector(`.account-link__value`);
+    const accountNotificationsOpenButtonCollection = document.querySelectorAll(`.js-account-link__value`);
     const openMenuButtonElement = document.querySelector(`.open-menu-button__el`);
     // EVENTS
-    if (accountNotificationsOpenButton) {
-        accountNotificationsOpenButton.addEventListener(`click`, onAccountNotificationsOpenButtonClickHandler);
+    if (accountNotificationsOpenButtonCollection.length) {
+        for (const accountNotificationsOpenButton of accountNotificationsOpenButtonCollection) {
+            accountNotificationsOpenButton.addEventListener(`click`, onAccountNotificationsOpenButtonClickHandler);
+        }
     }
     if (openMenuButtonElement) {
         openMenuButtonElement.addEventListener(`click`, onOpenMenuButtonElementClickHandler);

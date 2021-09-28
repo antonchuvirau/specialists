@@ -87,6 +87,9 @@
             &-exercises {
                 margin-top: 40px;
             }
+            &-box {
+                padding: 30px;
+            }
         }
     }
 }
@@ -134,6 +137,11 @@
                 &:not(:last-child) {
                     margin-bottom: 15px;
                 }
+            }
+        }
+        &__grid {
+            &-box {
+                padding: 30px 15px;
             }
         }
     }
