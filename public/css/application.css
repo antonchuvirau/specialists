@@ -7341,7 +7341,8 @@ h1 {
     font-weight: 600;
     color: #bdbdbd;
     line-height: 1.5;
-    padding: .375em 2.2em; }
+    padding: .375em 2.2em;
+    white-space: nowrap; }
     .faq-box__header-button:hover {
       background: #4F79FF;
       color: #fff; }
@@ -7353,7 +7354,8 @@ h1 {
   .faq-box__header-link {
     margin-left: auto;
     color: #4F79FF;
-    text-decoration: underline; }
+    text-decoration: underline;
+    white-space: nowrap; }
     .faq-box__header-link:hover {
       opacity: .85; }
 
@@ -7395,13 +7397,51 @@ h1 {
         position: absolute;
         width: 12px;
         height: 12px;
-        background: url("../img/icons/minus.svg") no-repeat 50%/12px auto;
+        background: url("../img/icons/plus.svg") no-repeat 50%/12px auto;
         top: 6px;
         right: calc(100% + 30px); }
-      .faq-box__list-item-title_active::before {
-        background: url("../img/icons/plus.svg") no-repeat 50%/12px auto; }
-      .faq-box__list-item-title_active + .faq-box__list-item-content {
-        display: block; }
+      .faq-box__list-item-title_active {
+        color: #4F79FF; }
+        .faq-box__list-item-title_active::before {
+          background: url("../img/icons/minus.svg") no-repeat 50%/12px auto; }
+        .faq-box__list-item-title_active + .faq-box__list-item-content {
+          display: block; }
+
+@media screen and (max-width: 1229px) {
+  .faq-box__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .faq-box__header-button {
+      margin-bottom: 20px; }
+      .faq-box__header-button:nth-child(n) {
+        margin-left: 0; }
+      .faq-box__header-button:not(:last-child) {
+        margin-right: 25px; }
+    .faq-box__header-link {
+      margin-left: 0;
+      position: relative;
+      top: -10px; }
+  .faq-box__list {
+    margin-top: 20px;
+    padding: 30px 45px; }
+    .faq-box__list-item-title::before {
+      right: calc(100% + 15px); } }
+
+@media screen and (max-width: 767px) {
+  .faq-box__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .faq-box__header-button {
+      margin-bottom: 15px;
+      padding: .375em 2em; }
+      .faq-box__header-button:nth-child(n) {
+        margin-left: 0; }
+      .faq-box__header-button:not(:last-child) {
+        margin-right: 10px; }
+    .faq-box__header-link {
+      margin-left: 0;
+      position: relative;
+      top: -8px; } }
 
 .b-catalog-box__wrapper {
   -webkit-box-shadow: 0 0 1px 0 rgba(79, 121, 255, 0.5), 0 4px 20px 0 rgba(79, 121, 255, 0.07);

@@ -12,6 +12,7 @@ $faq-br: 32px;
             color: $gray-50;
             line-height: 1.5;
             padding: .375em 2.2em;
+            white-space: nowrap;
             &:hover {
                 background: $primary;
                 color: $white;
@@ -28,6 +29,7 @@ $faq-br: 32px;
             margin-left: auto;
             color: $primary;
             text-decoration: underline;
+            white-space: nowrap;
             &:hover {
                 opacity: .85;
             }
@@ -76,13 +78,14 @@ $faq-br: 32px;
                     position: absolute;
                     width: 12px;
                     height: 12px;
-                    background: icon('minus.svg') no-repeat 50% / 12px auto;
+                    background: icon('plus.svg') no-repeat 50% / 12px auto;
                     top: 6px;
                     right: calc(100% + 30px);
                 }
                 &_active {
+                    color: $primary;
                     &::before {
-                        background: icon('plus.svg') no-repeat 50% / 12px auto;
+                        background: icon('minus.svg') no-repeat 50% / 12px auto;
                     }
                     & + .faq-box {
                         &__list {
@@ -94,6 +97,62 @@ $faq-br: 32px;
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .faq-box {
+        &__header {
+            flex-wrap: wrap;
+            &-button {
+                margin-bottom: 20px;
+                &:nth-child(n) {
+                    margin-left: 0;
+                }
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
+            }
+            &-link {
+                margin-left: 0;
+                position: relative;
+                top: -10px;
+            }
+        }
+        &__list {
+            margin-top: 20px;
+            padding: 30px 45px;
+            &-item {
+                &-title {
+                    &::before {
+                        right: calc(100% + 15px);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .faq-box {
+        &__header {
+            flex-wrap: wrap;
+            &-button {
+                margin-bottom: 15px;
+                padding: .375em 2em;
+                &:nth-child(n) {
+                    margin-left: 0;
+                }
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+            &-link {
+                margin-left: 0;
+                position: relative;
+                top: -8px;
             }
         }
     }
