@@ -103,6 +103,46 @@
             }
         }
     }
+    .catalog-template, .inner-template {
+        & .template {
+            // &__options {
+            //     &-select {
+            //         width: auto;
+            //         max-width: 200px;
+            //         flex: 1 1 auto;
+            //         &:nth-child(n) {
+            //             margin: 0;
+            //             margin-right: 15px;
+            //         }
+            //     }
+            // }
+            &__options {
+                flex-direction: column;
+                &-list {
+                    flex-direction: column;
+                    width: 100%;
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+                }
+                &-select {
+                    width: 100%;
+                    max-width: none;
+                    &:nth-child(n) {
+                        margin: 0;
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+                &-search {
+                    flex: 1 1 auto;
+                    width: 100%;
+                    max-width: none;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 767px) {
     .template {
@@ -119,34 +159,38 @@
                 }
             }
         }
-        &__options {
-            flex-direction: column;
-            &-list {
-                flex-direction: column;
-                width: 100%;
-                &:not(:last-child) {
-                    margin-bottom: 30px;
-                }
-            }
-            &-select {
-                width: 100%;
-                max-width: none;
-                &:nth-child(n) {
-                    margin: 0;
-                }
-                &:not(:last-child) {
-                    margin-bottom: 15px;
-                }
-            }
-            &-search {
-                flex: 1 1 auto;
-                width: 100%;
-                max-width: none;
-            }
-        }
         &__grid {
             &-box {
                 padding: 30px 15px;
+            }
+        }
+    }
+    .catalog-template {
+        & .template {
+            &__options {
+                flex-direction: column;
+                &-list {
+                    flex-direction: column;
+                    width: 100%;
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+                }
+                &-select {
+                    width: 100%;
+                    max-width: none;
+                    &:nth-child(n) {
+                        margin: 0;
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+                &-search {
+                    flex: 1 1 auto;
+                    width: 100%;
+                    max-width: none;
+                }
             }
         }
     }

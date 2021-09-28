@@ -4222,7 +4222,33 @@ h1 {
 
 @media screen and (max-width: 991px) {
   .template__grid-col:not(:last-child) {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .catalog-template .template__options, .inner-template .template__options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .catalog-template .template__options-list, .inner-template .template__options-list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      .catalog-template .template__options-list:not(:last-child), .inner-template .template__options-list:not(:last-child) {
+        margin-bottom: 30px; }
+    .catalog-template .template__options-select, .inner-template .template__options-select {
+      width: 100%;
+      max-width: none; }
+      .catalog-template .template__options-select:nth-child(n), .inner-template .template__options-select:nth-child(n) {
+        margin: 0; }
+      .catalog-template .template__options-select:not(:last-child), .inner-template .template__options-select:not(:last-child) {
+        margin-bottom: 15px; }
+    .catalog-template .template__options-search, .inner-template .template__options-search {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+      width: 100%;
+      max-width: none; } }
 
 @media screen and (max-width: 767px) {
   .template__wrapper {
@@ -4233,34 +4259,34 @@ h1 {
     .template__breadcrumbs_is-dark {
       padding-top: 0;
       border-top: none; }
-  .template__options {
+  .template__grid-box {
+    padding: 30px 15px; }
+  .catalog-template .template__options {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .template__options-list {
+    .catalog-template .template__options-list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
       width: 100%; }
-      .template__options-list:not(:last-child) {
+      .catalog-template .template__options-list:not(:last-child) {
         margin-bottom: 30px; }
-    .template__options-select {
+    .catalog-template .template__options-select {
       width: 100%;
       max-width: none; }
-      .template__options-select:nth-child(n) {
+      .catalog-template .template__options-select:nth-child(n) {
         margin: 0; }
-      .template__options-select:not(:last-child) {
+      .catalog-template .template__options-select:not(:last-child) {
         margin-bottom: 15px; }
-    .template__options-search {
+    .catalog-template .template__options-search {
       -webkit-box-flex: 1;
           -ms-flex: 1 1 auto;
               flex: 1 1 auto;
       width: 100%;
-      max-width: none; }
-  .template__grid-box {
-    padding: 30px 15px; } }
+      max-width: none; } }
 
 .catalog-template {
   background: url("../img/catalog-bg.svg") no-repeat 50%/100% auto; }
@@ -6499,18 +6525,18 @@ h1 {
     color: #4F79FF; } }
 
 @media screen and (max-width: 767px) {
-  .exercise-grid__list {
+  .exercise-grid__list:not(.exercise-grid__list_is-scroll) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-x: hidden; }
-  .exercise-grid__item {
-    width: 100%; }
-    .exercise-grid__item:not(:last-child) {
-      padding-bottom: 30px;
-      border-bottom: 1px solid rgba(79, 121, 255, 0.1);
-      margin-bottom: 30px; } }
+    .exercise-grid__list:not(.exercise-grid__list_is-scroll) .exercise-grid__item {
+      width: 100%; }
+      .exercise-grid__list:not(.exercise-grid__list_is-scroll) .exercise-grid__item:not(:last-child) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(79, 121, 255, 0.1);
+        margin-bottom: 30px; } }
 
 .form__footer {
   display: -webkit-box;

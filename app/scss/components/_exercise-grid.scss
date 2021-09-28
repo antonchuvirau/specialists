@@ -145,15 +145,19 @@
 @media screen and (max-width: 767px) {
     .exercise-grid {
         &__list {
-            flex-direction: column;
-            overflow-x: hidden;
-        }
-        &__item {
-            width: 100%;
-            &:not(:last-child) {
-                padding-bottom: 30px;
-                border-bottom: 1px solid rgba($primary, .1);
-                margin-bottom: 30px;
+            &:not(.exercise-grid__list_is-scroll) {
+                flex-direction: column;
+                overflow-x: hidden;
+                & .exercise-grid {
+                    &__item {
+                        width: 100%;
+                        &:not(:last-child) {
+                            padding-bottom: 30px;
+                            border-bottom: 1px solid rgba($primary, .1);
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
             }
         }
     }
