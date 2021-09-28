@@ -125,3 +125,39 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .subscription-personal-data {
+        &__list {
+            &-item {
+                &:nth-child(2) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    & .subscription-personal-data {
+                        &__list {
+                            &-name {
+                                margin-right: 0;
+                                margin-bottom: 15px;
+                                &_size {
+                                    &-m {
+                                        width: 100%;
+                                        flex: 0 0 auto;
+                                    }
+                                }
+                            }
+                        }
+                        &__status {
+                            flex-wrap: wrap;
+                            & a {
+                                &:last-child {
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

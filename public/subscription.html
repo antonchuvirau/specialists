@@ -23,13 +23,64 @@
     <header class="header header_is-dark header_is-sticky">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-3 header__col">
+                <div class="col-6 col-md-3 header__col">
                     <a href="#" class="logo header__logo">
                         <img class="logo__media" src="img/logo-dark.svg" alt="alt">
                     </a>
                 </div>
-                <div class="col-9 header__col">
+                <div class="col-6 d-md-none">
+                    <div class="open-menu-button">
+                        <button class="open-menu-button__el">
+                            <svg width="30" height="20" viewBox="0 0 30 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="1" y1="1" x2="29" y2="0.999997" stroke="#4F79FF" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <line x1="1" y1="10" x2="29" y2="10" stroke="#4F79FF" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <line x1="1" y1="19" x2="29" y2="19" stroke="#4F79FF" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-9 d-xl-none">
                     <div class="header__wrapper">
+                        <div class="d-xl-none account-link header__account-link">
+                            <a class="account-link__name" href="#">Моя подписка</a>
+                            <button type="button" class="account-link__value js-account-link__value">3</button>
+                            <div class="account-notifications account-link__notifications">
+                                <div class="account-notifications__wrapper">
+                                    <a href="#" class="account-notifications__item">
+                                        <p class="account-notifications__item-text">Уведомление, которое недавно пришло
+                                            в ваш личный кабинет, находится тут...</p>
+                                        <footer class="account-notifications__item-footer">
+                                            <span class="account-notifications__item-date">21/08/2020</span>
+                                            <span class="account-notifications__item-link">Читать больше</span>
+                                        </footer>
+                                    </a>
+                                    <a href="#" class="account-notifications__item">
+                                        <p class="account-notifications__item-text">Уведомление, которое недавно пришло
+                                            в ваш личный кабинет, находится тут...</p>
+                                        <footer class="account-notifications__item-footer">
+                                            <span class="account-notifications__item-date">21/08/2020</span>
+                                            <span class="account-notifications__item-link">Читать больше</span>
+                                        </footer>
+                                    </a>
+                                    <a href="#" class="account-notifications__item">
+                                        <p class="account-notifications__item-text">Уведомление, которое недавно пришло
+                                            в ваш личный кабинет, находится тут...</p>
+                                        <footer class="account-notifications__item-footer">
+                                            <span class="account-notifications__item-date">21/08/2020</span>
+                                            <span class="account-notifications__item-link">Читать больше</span>
+                                        </footer>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-9 header__col">
+                    <div class="header__wrapper header__navigation-wrapper header__wrapper_align-center">
                         <nav class="navigation header__navigation">
                             <ul class="list navigation__wrapper">
                                 <li class="navigation__item"><a href="#"
@@ -51,10 +102,11 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="account-link header__account-link">
+                        <div class="d-md-none d-xl-flex account-link header__account-link">
                             <a class="account-link__name" href="#">Моя подписка</a>
-                            <button type="button" class="account-link__value">3</button>
-                            <div class="account-notifications account-link__notifications">
+                            <button type="button"
+                                class="d-none d-xl-inline-block account-link__value js-account-link__value">3</button>
+                            <div class="d-none d-xl-flex account-notifications account-link__notifications">
                                 <div class="account-notifications__wrapper">
                                     <a href="#" class="account-notifications__item">
                                         <p class="account-notifications__item-text">Уведомление, которое недавно пришло
@@ -95,32 +147,43 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="breadcrumbs template__breadcrumbs">
+                        <div class="breadcrumbs template__breadcrumbs template__breadcrumbs_is-dark">
                             <div class="breadcrumbs__wrapper">
                                 <a href="#" class="breadcrumbs__link breadcrumbs__link_is-dark">Клиника динамика</a>
-                                <a class="breadcrumbs__link breadcrumbs__link_is-dark breadcrumbs__text">Хлебные крошки</a>
+                                <a class="breadcrumbs__link breadcrumbs__link_is-dark breadcrumbs__text">Хлебные
+                                    крошки</a>
                             </div>
                         </div>
                         <div class="template__grid bonus-template__grid">
                             <div class="subscription-personal-data">
                                 <ul class="list subscription-personal-data__list">
                                     <li class="subscription-personal-data__list-item">
-                                        <span class="subscription-personal-data__list-name subscription-personal-data__list-name_size-m">Ваш номер</span>
+                                        <span
+                                            class="subscription-personal-data__list-name subscription-personal-data__list-name_size-m">Ваш
+                                            номер</span>
                                         <div class="subscription-personal-data__list-value">
                                             <span>+7 (777) 777-77-77</span>
                                         </div>
                                     </li>
                                     <li class="subscription-personal-data__list-item">
-                                        <span class="subscription-personal-data__list-name subscription-personal-data__list-name_size-m">Статус подписки</span>
+                                        <span
+                                            class="subscription-personal-data__list-name subscription-personal-data__list-name_size-m">Статус
+                                            подписки</span>
                                         <div class="subscription-personal-data__list-value">
                                             <div class="subscription-personal-data__status">
-                                                <span class="subscription-personal-data__status-item">Активна</span>&nbsp;–&nbsp;<span class="subscription-personal-data__status-item">1 месяц</span>&nbsp;–&nbsp;<span class="subscription-personal-data__status-item subscription-personal-data__status-item_is-light">до 15.07.2021</span>
+                                                <span
+                                                    class="subscription-personal-data__status-item">Активна</span>&nbsp;–&nbsp;<span
+                                                    class="subscription-personal-data__status-item">1
+                                                    месяц</span>&nbsp;–&nbsp;<span
+                                                    class="subscription-personal-data__status-item subscription-personal-data__status-item_is-light">до
+                                                    15.07.2021</span>
                                                 <a href="#" class="btn btn_size-s btn_default">Продлить</a>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="subscription-personal-data__list-item">
-                                        <span class="subscription-personal-data__list-name subscription-personal-data__list-name_size-m">Автопродление</span>
+                                        <span
+                                            class="subscription-personal-data__list-name subscription-personal-data__list-name_size-m">Автопродление</span>
                                         <div class="subscription-personal-data__list-value">
                                             <label for="auto" class="b-toggle subscription-personal-data__b-toggle">
                                                 <input id="auto" class="b-toggle__input" type="checkbox" name="toggle">
@@ -136,14 +199,21 @@
                                     <span class="bonus-agreement-box__title">Бонусная система</span>
                                     <button type="button" class="btn">
                                         Что дает бонусная система?!
-                                        <svg class="btn__icon" width="12" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.61 6.148a1 1 0 0 1 0 1.704l-9.087 5.575A1 1 0 0 1 0 12.575V1.425A1 1 0 0 1 1.523.573l9.087 5.575Z" fill="#fff"/></svg>
+                                        <svg class="btn__icon" width="12" height="14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.61 6.148a1 1 0 0 1 0 1.704l-9.087 5.575A1 1 0 0 1 0 12.575V1.425A1 1 0 0 1 1.523.573l9.087 5.575Z"
+                                                fill="#fff" /></svg>
                                     </button>
                                 </header>
-                                <label class="checkbox-item checkbox-item_size-m checkbox-item_is-light bonus-agreement-box__privacy">
+                                <label
+                                    class="checkbox-item checkbox-item_size-m checkbox-item_is-light bonus-agreement-box__privacy">
                                     <input type="checkbox" name="privacy" class="checkbox-item__input">
-                                    <span class="checkbox-item__name">Хочу участвовать в бонусной системе cогласен с <a href="#">пользовательским соглашением</a></span>
+                                    <span class="checkbox-item__name">Хочу участвовать в бонусной системе cогласен с <a
+                                            href="#">пользовательским соглашением</a></span>
                                 </label>
-                                <button type="button" class="btn btn_white bonus-agreement-box__btn">Подтвердить</button>
+                                <button type="button"
+                                    class="btn btn_white bonus-agreement-box__btn">Подтвердить</button>
                             </div>
                         </div>
                         <section class="rate-section bonus-template__rate-section">
@@ -152,19 +222,17 @@
                             </header>
                             <div class="section__wrapper">
                                 <div class="message message_highlighted rate-section__message">
-                                    <div class="message__col message__content">
-                                        <p class="message__title">Бесплатный тестовый период - 14 дней
-                                        </p>
+                                    <div class="order-2 order-md-1 message__col message__content">
+                                        <p class="message__title">Бесплатный тестовый период - 14 дней</p>
                                         <div class="message__text">
-                                            <p>This is the Google for doctors! Most medical schools give
-                                                students access to UptoDate (I believe the subscription
-                                                for it is really pricey!). So, check with check with
-                                                your before.</p>
+                                            <p>This is the Google for doctors! Most medical schools give students access
+                                                to UptoDate (I believe the subscription for it is really pricey!). So,
+                                                check with check with your before.</p>
                                         </div>
                                         <a href="#order-modal" rel="modal:open"
                                             class="btn btn_green message__btn">Попробовать</a>
                                     </div>
-                                    <div class="message__col message__list">
+                                    <div class="order-1 order-md-2 message__col message__list">
                                         <ul>
                                             <li>Видео для помощи в подтверждении диагноза</li>
                                             <li>Безлимитный просмотр упражнений</li>
@@ -175,14 +243,13 @@
                                 </div>
                                 <div class="rate-section__grid">
                                     <div class="row">
-                                        <div class="col-3 rate-section__col">
+                                        <div class="col-6 col-xl-3 rate-section__col">
                                             <div class="rate-item">
                                                 <div class="rate-item__wrapper">
                                                     <p class="rate-item__title">1 месяц</p>
                                                     <div class="rate-item__desc">
                                                         <ul>
-                                                            <li>Видео для помощи в подтверждении
-                                                                диагноза</li>
+                                                            <li>Видео для помощи в подтверждении диагноза</li>
                                                             <li>Безлимитный просмотр упражнений</li>
                                                             <li>Отправка упражнений без ограничений</li>
                                                             <li>Просмотр с любых устройств</li>
@@ -190,20 +257,18 @@
                                                     </div>
                                                     <footer class="rate-item__options">
                                                         <span class="rate-item__price">500 р</span>
-                                                        <a href="#"
-                                                            class="btn btn_default rate-item__btn">Купить</a>
+                                                        <a href="#" class="btn btn_default rate-item__btn">Купить</a>
                                                     </footer>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-3 rate-section__col">
+                                        <div class="col-6 col-xl-3 rate-section__col">
                                             <div class="rate-item">
                                                 <div class="rate-item__wrapper">
                                                     <p class="rate-item__title">3 месяца</p>
                                                     <div class="rate-item__desc">
                                                         <ul>
-                                                            <li>Видео для помощи в подтверждении
-                                                                диагноза</li>
+                                                            <li>Видео для помощи в подтверждении диагноза</li>
                                                             <li>Безлимитный просмотр упражнений</li>
                                                             <li>Отправка упражнений без ограничений</li>
                                                             <li>Просмотр с любых устройств</li>
@@ -212,20 +277,18 @@
                                                     <footer class="rate-item__options">
                                                         <span class="rate-item__price">1400 р<span
                                                                 class="rate-item__price-old">1600</span></span>
-                                                        <a href="#"
-                                                            class="btn btn_default rate-item__btn">Купить</a>
+                                                        <a href="#" class="btn btn_default rate-item__btn">Купить</a>
                                                     </footer>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-3 rate-section__col">
+                                        <div class="col-6 col-xl-3 rate-section__col">
                                             <div class="rate-item">
                                                 <div class="rate-item__wrapper">
                                                     <p class="rate-item__title">6 месяцев</p>
                                                     <div class="rate-item__desc">
                                                         <ul>
-                                                            <li>Видео для помощи в подтверждении
-                                                                диагноза</li>
+                                                            <li>Видео для помощи в подтверждении диагноза</li>
                                                             <li>Безлимитный просмотр упражнений</li>
                                                             <li>Отправка упражнений без ограничений</li>
                                                             <li>Просмотр с любых устройств</li>
@@ -234,20 +297,18 @@
                                                     <footer class="rate-item__options">
                                                         <span class="rate-item__price">2550 р<span
                                                                 class="rate-item__price-sale">-15%</span></span>
-                                                        <a href="#"
-                                                            class="btn btn_default rate-item__btn">Купить</a>
+                                                        <a href="#" class="btn btn_default rate-item__btn">Купить</a>
                                                     </footer>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-3 rate-section__col">
+                                        <div class="col-6 col-xl-3 rate-section__col">
                                             <div class="rate-item">
                                                 <div class="rate-item__wrapper">
                                                     <p class="rate-item__title">12 месяцев</p>
                                                     <div class="rate-item__desc">
                                                         <ul>
-                                                            <li>Видео для помощи в подтверждении
-                                                                диагноза</li>
+                                                            <li>Видео для помощи в подтверждении диагноза</li>
                                                             <li>Безлимитный просмотр упражнений</li>
                                                             <li>Отправка упражнений без ограничений</li>
                                                             <li>Просмотр с любых устройств</li>
@@ -256,8 +317,7 @@
                                                     <footer class="rate-item__options">
                                                         <span class="rate-item__price">4800 р<span
                                                                 class="rate-item__price-sale">-20%</span></span>
-                                                        <a href="#"
-                                                            class="btn btn_green rate-item__btn">Купить</a>
+                                                        <a href="#" class="btn btn_green rate-item__btn">Купить</a>
                                                     </footer>
                                                 </div>
                                             </div>
@@ -265,17 +325,16 @@
                                     </div>
                                 </div>
                                 <div class="message rate-section__message">
-                                    <div class="message__col message__content">
+                                    <div class="message__col message__content message__content_is-custom">
                                         <p class="message__title">Подписка для клиник</p>
                                         <div class="message__text">
-                                            <p>This is the Google for doctors! Most medical schools give
-                                                students access to UptoDate (I believe the subscription
-                                                for it is really pricey!). So, check with check with
-                                                your before.</p>
+                                            <p>This is the Google for doctors! Most medical schools give students access
+                                                to UptoDate (I believe the subscription for it is really pricey!). So,
+                                                check with check with your before.</p>
                                         </div>
                                         <a class="btn btn_green message__btn" href="#">Узнать цену</a>
                                     </div>
-                                    <div class="message__col message__list">
+                                    <div class="d-none d-md-block message__col message__list">
                                         <ul>
                                             <li>Видео для помощи в подтверждении диагноза</li>
                                             <li>Безлимитный просмотр упражнений</li>
@@ -299,11 +358,10 @@
                 <div class="col-12">
                     <div class="footer__top">
                         <div class="row">
-                            <div class="col-4 footer__top-col">
-                                <img class="footer__logo" src="img/footer-logo.svg"
-                                    alt="alt">
+                            <div class="col-12 col-xl-4 footer__top-col">
+                                <img class="footer__logo" src="img/footer-logo.svg" alt="alt">
                             </div>
-                            <div class="col-2 offset-1 footer__top-col">
+                            <div class="col-12 col-md-3 col-xl-2 offset-xl-1 footer__top-col">
                                 <div class="social footer__social">
                                     <span class="social__title">Наши соцсети</span>
                                     <div class="social__wrapper">
@@ -313,8 +371,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 offset-1 footer__top-col">
-                                <div class="app">
+                            <div class="col-12 col-md-7 offset-md-2 col-xl-4 offset-xl-1 footer__top-col">
+                                <div class="app footer__app">
                                     <span class="app__title">Наше приложение</span>
                                     <div class="app__wrapper">
                                         <a class="app__link" href="#">App Store</a>
@@ -326,14 +384,14 @@
                     </div>
                     <div class="footer__bottom">
                         <div class="row align-items-center">
-                            <div class="col-7 footer__bottom-col">
+                            <div class="col-12 col-xl-7 footer__bottom-col">
                                 <p class="footer__text">&copy; Сopyright, 2021</p>
                                 <p class="footer__text">Весь материал защищен законом о защите авторских прав</p>
                             </div>
-                            <div class="col-3 footer__bottom-col">
+                            <div class="col-12 col-xl-3 footer__bottom-col">
                                 <a class="footer__link" href="#">Пользовательское соглашение</a>
                             </div>
-                            <div class="col-2 footer__bottom-col">
+                            <div class="d-none col-xl-2 d-xl-block footer__bottom-col">
                                 <a class="btn btn_size-s btn_size-auto footer__btn" href="#">Связаться с нами</a>
                             </div>
                         </div>

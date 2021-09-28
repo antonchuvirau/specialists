@@ -125,3 +125,23 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .referal-table {
+        &__box {
+            min-width: 1090px;
+        }
+        &__grid {
+            padding-bottom: 20px;
+            overflow-x: auto;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .referal-table {
+        &__btn {
+            width: 100%;
+        }
+    }
+}

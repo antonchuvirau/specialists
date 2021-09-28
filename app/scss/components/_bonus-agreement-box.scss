@@ -20,3 +20,21 @@
         margin-top: 25px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .bonus-agreement-box {
+        padding: 30px 15px;
+        &__header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__title {
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}

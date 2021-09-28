@@ -102,7 +102,7 @@
             max-width: none;
             &:not(:last-child) {
                 margin: 0;
-                margin-bottom: 25px;
+                margin-bottom: 20px;
             }
         }
         &__section {
@@ -121,6 +121,9 @@
         }
         &__footer {
             margin-top: 25px;
+        }
+        &__privacy {
+            margin-top: 5px;
         }
     }
 }

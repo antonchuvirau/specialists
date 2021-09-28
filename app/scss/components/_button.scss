@@ -118,3 +118,10 @@
         border-color: $gray-50;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .btn {
+        padding: .5em 1.5em;
+    }
+}

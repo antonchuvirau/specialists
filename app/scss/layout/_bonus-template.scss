@@ -12,3 +12,23 @@
         margin-top: 60px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .bonus-template {
+        &__grid {
+            padding-bottom: 0;
+        }
+        &__rate-section {
+            margin-top: 60px;
+        }
+        &__box {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid rgba($primary, .2);
+        }
+        &__agreement {
+            margin-top: 40px;
+        }
+    }
+}

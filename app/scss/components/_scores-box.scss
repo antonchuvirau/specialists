@@ -64,3 +64,33 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 767px) {
+    .scores-box {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__item {
+            width: 100%;
+            padding-left: 120px;
+            position: relative;
+            &-icon {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(calc(-50% - 6px));
+            }
+            &-btn {
+                margin-top: 0;
+            }
+            &-link {
+                margin-top: 20px;
+            }
+            &:not(:last-child) {
+                padding-bottom: 25px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
