@@ -6,3 +6,19 @@
         box-shadow: 0 0px 1px 0 rgba($primary, .5), 0 4px 20px 0 rgba($primary, .07);
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .exercise-template {
+        &__grid {
+            padding: 30px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .exercise-template {
+        &__grid {
+            padding: 20px 15px;
+        }
+    }
+}

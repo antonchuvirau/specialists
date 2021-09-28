@@ -143,3 +143,86 @@
         z-index: 1;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 1229px) {
+    .exercise-box {
+        &__media {
+            &-item {
+                &-video {
+                    width: 320px;
+                    flex: 1 0 320px;
+                    height: 190px;
+                    margin-right: 20px;
+                    border-radius: 10px;
+                    &::before {
+                        width: 50px;
+                        height: 32px;
+                        background-size: 50px auto;
+                    }
+                }
+                &-text {
+                    width: calc(100% - 320px);
+                }
+            }
+        }
+        &__title {
+            max-width: 440px;
+        }
+        &__sharing {
+            &-btn {
+                top: 0;
+                transform: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .exercise-box {
+        &__sharing {
+            &-btn {
+                position: relative;
+                top: auto;
+                transform: none;
+                font-size: 0;
+                margin-left: auto;
+                &.btn_share {
+                    border: none;
+                    background: none;
+                    & .btn {
+                        &__icon {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &__title {
+            max-width: none;
+            margin-bottom: 15px;
+        }
+        &__meta {
+            position: relative;
+            padding-bottom: 35px;
+        }
+        &__name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &__media {
+            &-item {
+                flex-direction: column;
+                &-video {
+                    flex: 1 1 auto;
+                    width: 100%;
+                    margin: 0;
+                }
+                &-text {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
